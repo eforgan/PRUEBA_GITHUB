@@ -126,17 +126,22 @@
         .helo-case {
             background: rgba(0, 98, 255, 0.1);
             border-left: 4px solid var(--primary);
-            padding: 1.5rem;
+            padding: 2rem;
             border-radius: 0 16px 16px 0;
-            margin: 1.5rem 0;
+            margin: 2rem 0;
         }
 
         .helo-case h4 {
             color: #60a5fa;
             text-transform: uppercase;
-            font-size: 0.85rem;
-            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
             letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        .helo-case strong {
+            color: #fff;
         }
 
         .diagram-container {
@@ -161,6 +166,7 @@
             color: var(--accent);
             margin-bottom: 1.5rem;
             font-family: 'Outfit', sans-serif;
+            font-size: 1.8rem;
         }
 
         .quiz-option {
@@ -190,6 +196,7 @@
             margin-top: 2rem;
             transition: transform 0.2s, background 0.2s;
             font-family: 'Outfit', sans-serif;
+            font-size: 1.1rem;
         }
 
         .btn-next:hover {
@@ -198,38 +205,44 @@
         }
 
         h1 {
-            font-size: 2.8rem;
-            margin-bottom: 1rem;
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
             color: #fff;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 10px;
         }
 
         h2 {
-            font-size: 2rem;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
+            font-size: 2.2rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
             color: var(--accent);
         }
 
         h3 {
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1.2rem;
+            color: #60a5fa;
         }
 
         p {
-            margin-bottom: 1.2rem;
+            margin-bottom: 1.5rem;
             color: #cbd5e1;
-            font-size: 1.1rem;
+            font-size: 1.15rem;
+            text-align: justify;
         }
 
-        ul {
-            margin-bottom: 1.5rem;
-            padding-left: 1.5rem;
+        ul,
+        ol {
+            margin-bottom: 2rem;
+            padding-left: 2rem;
             color: #cbd5e1;
+            font-size: 1.15rem;
         }
 
         li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem;
         }
 
         .status-badge {
@@ -255,6 +268,18 @@
         .status-completed {
             background: var(--success);
             color: white;
+        }
+
+        .important-box {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid var(--danger);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+
+        .important-box strong {
+            color: var(--danger);
         }
     </style>
 </head>
@@ -290,171 +315,228 @@
 
         <!-- MODULO 1 -->
         <section id="mod1" class="content-section active">
-            <h1 class="nav-title">Módulo 1: Fundamentos y Marco Regulatorio</h1>
-            <p>Introducción a la filosofía de seguridad y la estructura legal que rige el transporte de carga peligrosa
-                en la República Argentina bajo los estándares de la <strong>ANAC</strong>.</p>
+            <h1>Módulo 1: Fundamentos y Marco Regulatorio AR</h1>
+            <p>El transporte de mercancías peligrosas por vía aérea en la República Argentina no es solo un proceso
+                logístico, sino una operación crítica de seguridad operacional (Safety). El marco legal garantiza que el
+                riesgo se mantenga bajo niveles aceptables.</p>
 
-            <h2>Sección 1.1: Marco Legal (OACI/RAAC Parte 18)</h2>
-            <p>El traslado de sustancias peligrosas por vía aérea se rige por el Anexo 18 de la OACI, el cual es
-                implementado en Argentina a través de la <strong>RAAC Parte 18</strong>.</p>
+            <h3>1.1 La Autoridad Aeronáutica: ANAC</h3>
+            <p>En Argentina, la <strong>Administración Nacional de Aviación Civil (ANAC)</strong> es el organismo
+                encargado de legislar y fiscalizar. La norma central es la <strong>RAAC Parte 18</strong> ("Transporte
+                sin riesgos de mercancías peligrosas por vía aérea").</p>
+            <ul>
+                <li><strong>OACI Anexo 18:</strong> Es la norma internacional (Instrucciones Técnicas).</li>
+                <li><strong>RAAC Parte 18:</strong> Es la transposición de la norma internacional a la ley nacional
+                    argentina.</li>
+                <li><strong>Manual IATA DGR:</strong> Es el manual de uso diario que contiene todas las regulaciones de
+                    OACI más las variaciones de los estados (como las de Argentina) y de las aerolíneas.</li>
+            </ul>
 
             <div class="helo-case">
-                <h4>CASO HELICÓPTEROS: PATAGONIA</h4>
-                <p>En operaciones en helipads remotos (ej. zona cordillerana), el piloto debe verificar el cumplimiento
-                    de la RAAC Parte 18, ya que a menudo no cuenta con un agente de carga certificado en el sitio.</p>
+                <h4>ESCENARIO PRÁCTICO: OPERACIÓN EN TIERRA DEL FUEGO</h4>
+                <p><strong>Situación:</strong> Un helicóptero debe trasladar repuestos químicos para una plataforma
+                    petrolera desde un helisito remoto cerca de Río Grande.</p>
+                <p><strong>Desarrollo:</strong> Al no haber personal de rampa certificado en el lugar, el <strong>piloto
+                        al mando</strong> asume la responsabilidad final de verificar que la carga cumpla con la RAAC
+                    18. Debe asegurar que el expedidor haya provisto la documentación y que los bultos no presenten
+                    daños visibles antes de subirlos a la aeronave.</p>
             </div>
 
-            <h2>Sección 1.2: Responsabilidades</h2>
-            <p>El <strong>Expedidor</strong> es responsable de la correcta clasificación, embalaje y marcado. El
-                <strong>Explotador</strong> (aerolínea) es responsable de la inspección, almacenamiento y carga segura.
-            </p>
-
-            <div class="diagram-container" style="text-align: center;">
-                <strong>Jerarquía de Normativa en Argentina</strong><br><br>
-                <div style="border: 2px solid var(--primary); padding: 10px; border-radius: 8px;">OACI Anexo 18
-                    (Instrucciones Técnicas)</div>
-                <div style="margin: 5px;">⬇</div>
-                <div style="border: 2px solid var(--accent); padding: 10px; border-radius: 8px;">RAAC Parte 18
-                    (Autoridad: ANAC)</div>
-                <div style="margin: 5px;">⬇</div>
-                <div style="border: 2px solid var(--success); padding: 10px; border-radius: 8px;">Manual IATA DGR
-                    (Estándar de la Industria)</div>
-            </div>
+            <h3>1.2 Responsabilidades Legales</h3>
+            <ol>
+                <li><strong>Expedidor (Remitente):</strong> Debe CLASIFICAR, IDENTIFICAR, EMBALAR, MARCAR y ETIQUETAR.
+                </li>
+                <li><strong>Explotador (Aerolínea/Operador de Helo):</strong> Debe ACEPTAR (usando una checklist),
+                    ALMACENAR, CARGAR e INFORMAR (NOTOC).</li>
+            </ol>
 
             <div class="quiz-container">
-                <h3 class="quiz-title">Examen de Módulo 1</h3>
+                <h3 class="quiz-title">Test de Seguridad 1</h3>
                 <div id="quiz1"></div>
-                <button class="btn-next" onclick="validateQuiz(1)">Calificar y Avanzar</button>
+                <button class="btn-next" onclick="validateQuiz(1)">Calificar y Desbloquear Módulo 2</button>
             </div>
         </section>
 
         <!-- MODULO 2 -->
         <section id="mod2" class="content-section">
-            <h1>Módulo 2: Clasificación de Riesgo</h1>
-            <p>Identificación de las 9 clases de peligro y su relevancia técnica en aeronaves de alas rotativas según la
-                clasificación internacional adoptada por la RAAC.</p>
+            <h1>Módulo 2: Clasificación Técnica de Riesgos</h1>
+            <p>Toda sustancia que represente un riesgo para la salud, la seguridad o los bienes debe ser clasificada en
+                una de las 9 clases internacionales. En helicópteros, el impacto de una falla es inmediato debido a la
+                proximidad de la carga a la tripulación.</p>
 
             <div class="image-box">
                 <img src="./dg_labels_infographic_1772558418662.png" alt="9 Clases de Mercancías Peligrosas">
             </div>
 
-            <h2>Sección 2.1: Clase 1 y 2 (Explosivos y Gases)</h2>
+            <h3>2.1 Clasificación Detallada</h3>
+            <ul>
+                <li><strong>Clase 1: Explosivos.</strong> Prohibidos en la mayoría de los casos en vuelos de pasajeros.
+                </li>
+                <li><strong>Clase 2: Gases.</strong> Incluye el oxígeno médico (2.2) y gases inflamables (2.1).</li>
+                <li><strong>Clase 3: Líquidos Inflamables.</strong> Como el combustible JET A-1 o AVGAS.</li>
+                <li><strong>Clase 8: Corrosivos.</strong> Líquidos que pueden dañar la estructura metálica del
+                    helicóptero.</li>
+                <li><strong>Clase 9: Misceláneos.</strong> Baterías de litio y hielo seco.</li>
+            </ul>
+
             <div class="helo-case">
-                <h4>OPERACIÓN HEMS</h4>
-                <p>El transporte de oxígeno médico es vital. Según la RAAC, las botellas de Clase 2.2 deben estar
-                    ancladas en racks certificados para evitar movimientos bruscos durante el vuelo.</p>
+                <h4>ESCENARIO PRÁCTICO: HEMS EN ÁREA METROPOLITANA</h4>
+                <p><strong>Situación:</strong> Un traslado sanitario (HEMS) requiere oxígeno de alta presión constante
+                    para un paciente crítico.</p>
+                <p><strong>Aplicación:</strong> Según la normativa de la ANAC, el cilindro de oxígeno (Clase 2.2) debe
+                    estar instalado en un rack certificado por la fábrica o mediante un STC (Certificado de Tipo
+                    Suplementario). Nunca debe viajar suelto en el piso, ya que en caso de impacto o vibración extrema,
+                    la válvula podría romperse y convertir al cilindro en un proyectil de alta energía.</p>
             </div>
 
-            <h2>Sección 2.2: Clase 3 (Líquidos Inflamables)</h2>
-            <p>Combustibles como JET A-1 o AVGAS. En Argentina, el traslado de tambores para reabastecimiento en puestos
-                remotos es común y requiere etiquetado Clase 3 con número UN visible.</p>
-
             <div class="quiz-container">
-                <h3 class="quiz-title">Examen de Módulo 2</h3>
+                <h3 class="quiz-title">Test de Seguridad 2</h3>
                 <div id="quiz2"></div>
-                <button class="btn-next" onclick="validateQuiz(2)">Calificar y Avanzar</button>
+                <button class="btn-next" onclick="validateQuiz(2)">Calificar y Desbloquear Módulo 3</button>
             </div>
         </section>
 
         <!-- MODULO 3 -->
         <section id="mod3" class="content-section">
-            <h1>Módulo 3: Embalaje, Marcado y Etiquetado</h1>
-            <p>Aseguramiento físico de la mercancía y comunicación visual en la aeronave según RAAC 18.</p>
+            <h1>Módulo 3: Embalaje y Marcado de Alta Especificación</h1>
+            <p>El embalaje es la primera barrera de seguridad. En Argentina, solo se aceptan embalajes que cumplan con
+                las especificaciones de las Naciones Unidas (UN).</p>
 
-            <h2>Sección 3.1: Embalaje UN</h2>
-            <p>Solo se permiten embalajes que hayan superado pruebas de caída, apilado y presión. El código "X" indica
-                el nivel de seguridad más alto (GE I).</p>
+            <h3>3.1 Códigos de Embalaje</h3>
+            <ul>
+                <li><strong>4G:</strong> Caja de cartón.</li>
+                <li><strong>1A:</strong> Tambor de acero.</li>
+                <li><strong>X:</strong> Apto para GRUPO DE EMBALAJE I (Peligro alto).</li>
+                <li><strong>Y:</strong> Apto para GRUPO DE EMBALAJE II (Peligro medio).</li>
+            </ul>
 
             <div class="helo-case">
-                <h4>CABINAS REDUCIDAS</h4>
-                <p>En el AW109, el espacio es crítico. La etiqueta de "Orientación" (flechas) es obligatoria para
-                    garantizar que la carga no se vuelque y provoque una falla sistémica.</p>
+                <h4>ESCENARIO PRÁCTICO: TRASLADO DE REPUESTOS AW109SP</h4>
+                <p><strong>Situación:</strong> Se envía un actuador hidráulico que contiene aceite residual para
+                    reparación.</p>
+                <p><strong>Operación:</strong> El espacio en la bodega de un AW109 es limitado. La etiqueta de
+                    **ORIENTACIÓN** (dos flechas negras sobre fondo blanco) debe estar presente en dos lados opuestos.
+                    El piloto debe verificar que el bulto no se coloque horizontalmente, ya que la vibración del
+                    helicóptero podría forzar fugas de aceite corrosivo hacia los cables de mando que pasan por debajo
+                    del piso de carga.</p>
             </div>
 
             <div class="quiz-container">
-                <h3 class="quiz-title">Examen de Módulo 3</h3>
+                <h3 class="quiz-title">Test de Seguridad 3</h3>
                 <div id="quiz3"></div>
-                <button class="btn-next" onclick="validateQuiz(3)">Calificar y Avanzar</button>
+                <button class="btn-next" onclick="validateQuiz(3)">Calificar y Desbloquear Módulo 4</button>
             </div>
         </section>
 
         <!-- MODULO 4 -->
         <section id="mod4" class="content-section">
-            <h1>Módulo 4: Documentación y Aceptación</h1>
-            <p>Protocolos de verificación y trámites legales obligatorios en el sistema aeronáutico argentino bajo
-                fiscalización de la ANAC.</p>
+            <h1>Módulo 4: Documentación Legal y Aceptación</h1>
+            <p>La seguridad aérea se basa en la trazabilidad. En Argentina, la ANAC exige una documentación impecable
+                antes de cualquier despegue con carga peligrosa.</p>
 
-            <h2>Sección 4.1: NOTOC (Notificación al Comandante)</h2>
-            <p>Es el documento legal donde se informa al piloto la ubicación, cantidad y tipo de mercancía. El piloto
-                debe verificar que la ubicación no afecte el Centro de Gravedad (CG).</p>
+            <h3>4.1 La Declaración del Expedidor (DGD)</h3>
+            <p>Es el contrato legal donde el remitente certifica que la carga es segura. **No se permiten tachaduras ni
+                corrector líquido**. Cualquier error invalida el documento y el piloto debe rechazar la carga.</p>
+
+            <h3>4.2 NOTOC (Notification to Captain)</h3>
+            <p>El piloto al mando DEBE recibir por escrito la información sobre qué lleva, dónde está ubicado y qué
+                riesgos implica. El NOTOC es la herramienta para la respuesta ante emergencias.</p>
 
             <div class="helo-case">
-                <h4>OPERACIONES OFF-SHORE</h4>
-                <p>En plataformas petroleras, el piloto debe recibir el NOTOC antes de iniciar el encendido de turbinas,
-                    verificando la compatibilidad de la carga mediante la tabla de segregación.</p>
+                <h4>ESCENARIO PRÁCTICO: CAMPAMENTO MINERO EN LOS ANDES</h4>
+                <p><strong>Situación:</strong> Se cargan múltiples químicos para análisis de minerales en una canasta
+                    externa o bodega lateral.</p>
+                <p><strong>Seguridad:</strong> El piloto debe usar la **Tabla de Segregación** para confirmar que no se
+                    carguen sustancias incompatibles (ej. ácidos con bases) una al lado de la otra. Si el NOTOC indica
+                    un riesgo subsidiario de inflamabilidad, el área debe estar libre de fuentes de calor o escapes del
+                    motor.</p>
             </div>
 
             <div class="quiz-container">
-                <h3 class="quiz-title">Examen de Módulo 4</h3>
+                <h3 class="quiz-title">Test de Seguridad 4</h3>
                 <div id="quiz4"></div>
-                <button class="btn-next" onclick="validateQuiz(4)">Calificar y Avanzar</button>
+                <button class="btn-next" onclick="validateQuiz(4)">Calificar y Desbloquear Módulo 5</button>
             </div>
         </section>
 
         <!-- MODULO 5 -->
         <section id="mod5" class="content-section">
-            <h1>Módulo 5: Mercancías Especiales</h1>
-            <p>Gestión de artículos críticos: Baterías de Litio y Hielo Seco.</p>
+            <h1>Módulo 5: Mercancías Críticas: Litio y Hielo Seco</h1>
+            <p>Dos elementos que parecen inofensivos pero que han causado accidentes graves en la aviación.</p>
 
-            <h2>Sección 5.1: Baterías de Litio (UN 3480/3481)</h2>
-            <p>Riesgo de Fuga Térmica (Thermal Runaway). En Argentina, se exige que las baterías viajen con un SoC
-                (Estado de Carga) máximo del 30%.</p>
+            <h3>5.1 Baterías de Litio (UN 3480 / 3481)</h3>
+            <p>El riesgo es la **Fuga Térmica (Thermal Runaway)**. En Argentina, siguiendo a IATA, las baterías de ion
+                litio solas (3480) deben viajar con un estado de carga (SoC) máximo del **30%**.</p>
 
-            <h2>Sección 5.2: Hielo Seco (CO2 Sólido)</h2>
-            <p>Utilizado para transporte sanitario. Al sublimarse, libera CO2 que desplaza el oxígeno. En helicópteros,
-                la ventilación debe ser máxima.</p>
+            <h3>5.2 Hielo Seco (Dióxido de Carbono Sólido)</h3>
+            <p>Utilizado para mantener la cadena de frío en transporte de órganos o muestras biológicas. Al sublimarse
+                (pasar de sólido a gas), libera CO2 que desplaza el oxígeno en cabinas pequeñas de helicópteros.</p>
+
+            <div class="helo-case">
+                <h4>ESCENARIO PRÁCTICO: TRASLADO SANITARIO CON HIELO SECO</h4>
+                <p><strong>Situación:</strong> Un helicóptero transporta muestras de laboratorio conservadas con 5 kg de
+                    Hielo Seco.</p>
+                <p><strong>Precaución:</strong> Debido al volumen de aire reducido en la cabina de un helicóptero
+                    ligero, el CO2 puede acumularse rápidamente causando somnolencia en el piloto. Se debe verificar que
+                    el embalaje NO sea hermético (para evitar explosión por presión) y se debe mantener la ventilación
+                    de la cabina al máximo durante todo el trayecto.</p>
+            </div>
 
             <div class="quiz-container">
-                <h3 class="quiz-title">Examen de Módulo 5</h3>
+                <h3 class="quiz-title">Test de Seguridad 5</h3>
                 <div id="quiz5"></div>
-                <button class="btn-next" onclick="validateQuiz(5)">Calificar y Avanzar</button>
+                <button class="btn-next" onclick="validateQuiz(5)">Calificar y Desbloquear Módulo 6</button>
             </div>
         </section>
 
         <!-- MODULO 6 -->
         <section id="mod6" class="content-section">
-            <h1>Módulo 6: Emergencias y Reportes</h1>
-            <p>Acción ante contingencias y cumplimiento de la notificación obligatoria a la ANAC.</p>
+            <h1>Módulo 6: Emergencias y Reportes a la ANAC</h1>
+            <p>¿Qué hacer cuando las barreras de seguridad fallan? El entrenamiento en respuesta técnica salva vidas.
+            </p>
 
-            <h2>Sección 6.1: Respuesta Técnica</h2>
-            <p>Ante olor o humo sospechoso: 1. Aislar, 2. Ventilar (abrir storm window), 3. Aterrizar en el helisito más
-                cercano.</p>
+            <h3>6.1 El Protocolo de Respuesta</h3>
+            <ol>
+                <li><strong>IDENTIFICAR:</strong> Usar el NOTOC para saber qué se filtró.</li>
+                <li><strong>AISLAR:</strong> Alejar a las personas y cubrir con material absorbente si es posible.</li>
+                <li><strong>VENTILAR:</strong> En vuelo, abrir la ventana de tormenta o ajustar el sistema de aire.</li>
+                <li><strong>ATERRIZAR:</strong> Declarar emergencia y aterrizar en el helisito más próximo.</li>
+            </ol>
+
+            <div class="important-box">
+                <strong>NOTIFICACIÓN OBLIGATORIA:</strong> En Argentina, todo incidente o accidente con mercancías
+                peligrosas debe reportarse a la **ANAC** en un plazo máximo de **72 horas**. Ocultar un incidente es una
+                falta grave a la seguridad aérea.
+            </div>
 
             <div class="helo-case">
-                <h4>PLAZOS LEGALES ANAC</h4>
-                <p>Cualquier incidente o accidente con mercancía peligrosa debe reportarse a la ANAC en un plazo máximo
-                    de <strong>72 horas</strong>.</p>
+                <h4>ESCENARIO PRÁCTICO: DERRAME DURANTE VUELO OFF-SHORE</h4>
+                <p><strong>Situación:</strong> Se detecta un olor penetrante proveniente del área de carga durante el
+                    vuelo hacia una plataforma.</p>
+                <p><strong>Acción:</strong> El piloto debe consultar inmediatamente su Guía de Respuesta Técnica (ERG).
+                    Si hay sospecha de vapores tóxicos, debe iniciar un descenso controlado, configurar ventilación de
+                    aire fresco (no recirculación) y notificar a la base que aterrizará de emergencia, sin intentar
+                    llegar al destino si este está a más de unos minutos.</p>
             </div>
 
             <div class="quiz-container">
-                <h3 class="quiz-title">Examen de Módulo 6</h3>
+                <h3 class="quiz-title">Test de Seguridad 6</h3>
                 <div id="quiz6"></div>
-                <button class="btn-next" onclick="validateQuiz(6)">Calificar y Avanzar</button>
+                <button class="btn-next" onclick="validateQuiz(6)">Calificar y Acceder al Examen Final</button>
             </div>
         </section>
 
         <!-- EXAMEN FINAL -->
         <section id="mod7" class="content-section">
-            <h1 style="color: var(--accent);">Certificación Final: 30 Preguntas</h1>
-            <p>Usted ha llegado a la etapa final del curso. Este examen integra todos los conocimientos de la RAAC Parte
-                18 aplicada a helicópteros en Argentina.</p>
-            <p>Requerimiento de aprobación: <strong>80% (24 correctas)</strong>.</p>
+            <h1>Examen Final de Certificación RAAC Parte 18</h1>
+            <p>Usted ha completado el desarrollo teórico y práctico. Este examen integral de 30 preguntas validará su
+                conocimiento sobre la operación en Argentina.</p>
+            <p><strong>Requisito:</strong> 24 correctas (80%).</p>
 
             <div class="quiz-container" style="background: rgba(0,0,0,0.5);">
-                <h3 class="quiz-title">Examen Integral Argentina</h3>
                 <div id="quiz7"></div>
                 <button class="btn-next" style="background: var(--accent);" onclick="validateQuiz(7)">Finalizar y
-                    Obtener Puntaje</button>
+                    Evaluar</button>
             </div>
         </section>
 
@@ -465,78 +547,78 @@
 
         const quizzes = {
             1: [
-                { q: "¿Qué documento legal regula el transporte de mercancías peligrosas en Argentina?", a: ["DAR-18", "RAAC Parte 18", "Anexo 1"], c: 1 },
-                { q: "¿Quién es el responsable legal de la clasificación de la mercancía?", a: ["El Piloto", "El Expedidor", "El Explotador"], c: 1 },
-                { q: "¿Qué anexo de OACI es la base de la RAAC 18?", a: ["Anexo 1", "Anexo 18", "Anexo 17"], c: 1 },
-                { q: "¿Requiere un operador argentino autorización de ANAC para llevar carga peligrosa?", a: ["No, es libre", "Sí, siempre", "Solo internacional"], c: 1 },
-                { q: "¿Qué significa NOTOC?", a: ["Nota de Carga", "Notification to Captain", "No tocar bulto"], c: 1 }
+                { q: "¿Qué norma argentina regula el transporte aéreo de mercancías peligrosas?", a: ["ANAC RAAC 18", "OACI RAAC 1", "Ley de Carga 2025"], c: 0 },
+                { q: "¿Quién se encarga de legislar y fiscalizar el transporte de DG en Argentina?", a: ["Fuerza Aérea", "ANAC", "IATA"], c: 1 },
+                { q: "En un helisito remoto sin personal, ¿quién tiene la responsabilidad final de seguridad?", a: ["El cargador", "El piloto al mando", "El dueño de la aeronave"], c: 1 },
+                { q: "¿En qué manual se encuentran las variaciones de estado de Argentina?", a: ["Manual de Vuelo", "IATA DGR (Sección 2)", "Código Aeronáutico"], c: 1 },
+                { q: "¿Qué documento debe acompañar siempre a la carga detallando qué y dónde está?", a: ["DGD", "NOTOC", "Factura Proforma"], c: 1 }
             ],
             2: [
-                { q: "¿A qué clase pertenecen las baterías de litio?", a: ["3", "7", "9"], c: 2 },
-                { q: "¿Qué GE representa el peligro mayor?", a: ["III", "I", "II"], c: 1 },
-                { q: "¿Qué significa el Número UN?", a: ["Num. de vuelo", "Num. internacional de ONU", "Cod. de barras"], c: 1 },
-                { q: "¿Cuál es la clase de gases inflamables?", a: ["2.1", "2.2", "2.3"], c: 0 },
-                { q: "¿Qué autoridad argentina fiscaliza la lista de MP?", a: ["DGAC", "ANAC", "Prefectura"], c: 1 }
+                { q: "¿A qué clase pertenecen las baterías de litio?", a: ["Clase 3", "Clase 7", "Clase 9"], c: 2 },
+                { q: "El oxígeno médico en un helicóptero HEMS pertenece a la clase:", a: ["2.1", "2.2", "3"], c: 1 },
+                { q: "Si el GE (Grupo de Embalaje) es III, ¿qué nivel de peligro representa?", a: ["Bajo", "Medio", "Alto"], c: 0 },
+                { q: "¿A qué clase pertenecen los sólidos inflamables?", a: ["Clase 4", "Clase 8", "Clase 1"], c: 0 },
+                { q: "¿Qué número internacional asigna la ONU para identificar sustancias?", a: ["Num. de Parte", "Número UN", "ID de Fabricante"], c: 1 }
             ],
             3: [
-                { q: "¿Qué indica la 'X' en una marca UN?", a: ["Peligro bajo", "Peligro alto (GE I)", "Prohibido"], c: 1 },
-                { q: "¿Qué etiqueta es vital en helicópteros de cabina pequeña?", a: ["CAO", "Orientación", "Radioactivo"], c: 1 },
-                { q: "¿Quién prevalece si hay diferencia entre IATA y RAAC en Argentina?", a: ["IATA", "Regulaciones de la ANAC", "Manual de Vuelo"], c: 1 },
-                { q: "¿Qué indica la marca 'Y' en un embalaje UN?", a: ["GE III únicamente", "GE II y III", "GE I"], c: 1 },
-                { q: "¿Las etiquetas deben ser visibles?", a: ["No", "Siempre", "Solo al aterrizar"], c: 1 }
+                { q: "Un embalaje con código 'X' está calificado para:", a: ["Solo GE III", "GE I, II y III", "Prohibido"], c: 1 },
+                { q: "¿Qué indica la marca '4G'?", a: ["Tambor de acero", "Caja de cartón", "Jerrican plástico"], c: 1 },
+                { q: "¿Cuál es la etiqueta de manipulación vital en el espacio reducido de un Helo?", a: ["CAO", "Orientación de Bulto", "Frágil"], c: 1 },
+                { q: "¿Se puede usar una caja doméstica para enviar químicos por aire?", a: ["Sí, si es resistente", "No, requiere especificación UN", "Solo en vuelos cortos"], c: 1 },
+                { q: "¿Qué debe verificar el piloto sobre el estado del bulto?", a: ["El color", "Integridad (sin fugas ni daños)", "La marca de la cinta"], c: 1 }
             ],
             4: [
-                { q: "¿Qué documento debe estar firmado por el expedidor?", a: ["DGD", "NOTOC", "Checklist"], c: 0 },
-                { q: "¿Se permite corrector en la DGD?", a: ["Sí", "No", "Solo tachar"], c: 1 },
-                { q: "¿Qué documento recibe el piloto detallando la carga?", a: ["Manifiesto", "NOTOC", "Plan de Vuelo"], c: 1 },
-                { q: "¿Qué tabla verifica si dos químicos pueden viajar juntos?", a: ["Tabla A", "Tabla Segregación", "RAAC Part 1"], c: 1 },
-                { q: "¿Se puede cargar MP si el piloto no tiene NOTOC?", a: ["Sí", "No", "Si hay poco peso"], c: 1 }
+                { q: "¿Qué prohíbe ANAC respecto a la DGD?", a: ["Firmarla", "Cualquier corrección o tachadura", "Usar tinta azul"], c: 1 },
+                { q: "¿Quién debe proveer la información de emergencia?", a: ["El piloto", "El expedidor", "La torre"], c: 1 },
+                { q: "¿Para qué sirve la tabla de segregación?", a: ["Calcular peso", "Ver compatibilidad entre químicos", "Rutas directas"], c: 1 },
+                { q: "¿Es obligatorio que el NOTOC sea por escrito?", a: ["No", "Sí, siempre", "Solo internacional"], c: 1 },
+                { q: "Si detecta un bulto filtrando en carga, ¿qué debe hacer?", a: ["Limpiarlo", "Rechazarlo inmediatamente", "Informar al aterrizar"], c: 1 }
             ],
             5: [
-                { q: "¿SoC máximo para baterías de litio como carga?", a: ["50%", "30%", "100%"], c: 1 },
-                { q: "¿Riesgo principal del hielo seco en cabina de helicóptero?", a: ["Fuego", "Desplazamiento de O2 (CO2)", "Explosión"], c: 1 },
-                { q: "¿Qué es el Thermal Runaway?", a: ["Vuelo rápido", "Fuga térmica en litio", "Corrosión"], c: 1 },
-                { q: "¿El embalaje de hielo seco debe ser hermético?", a: ["Sí", "No (debe ventilar)", "OPCIONAL"], c: 1 },
-                { q: "¿Identificación UN de una batería de litio metal sola?", a: ["UN 3480", "UN 3090", "UN 3091"], c: 1 }
+                { q: "¿SoC máximo para baterías de litio UN 3480?", a: ["50%", "30%", "100%"], c: 1 },
+                { q: "Riesgo principal del Hielo Seco en helicópteros:", a: ["Incendio", "Asfixia por CO2", "Corrosión"], c: 1 },
+                { q: "¿El embalaje de Hielo Seco debe estar sellado herméticamente?", a: ["Sí", "No (para evitar explosión)", "Solo en verano"], c: 1 },
+                { q: "¿Cómo se llama el fuego imparable en una batería de litio?", a: ["Flash point", "Thermal Runaway", "Boiling point"], c: 1 },
+                { q: "Identificación de baterías de litio contenidas en equipo:", a: ["UN 3480", "UN 3481", "UN 3090"], c: 1 }
             ],
             6: [
-                { q: "¿Acción inmediata ante olor químico en vuelo?", a: ["Esperar", "Ventilar y aterrizar", "Subir altura"], c: 1 },
-                { q: "¿Manual de consulta técnica para derrames?", a: ["QRH", "Guía ERG (OACI)", "Libro de a bordo"], c: 1 },
-                { q: "¿Plazo legal ANAC para reporte de incidentes?", a: ["48hs", "72hs", "24hs"], c: 1 },
-                { q: "¿Ejemplo de MP oculta?", a: ["GPS", "Camping Gas", "Ropa de vuelo"], c: 1 },
-                { q: "¿A quién se reporta un accidente con MP en Argentina?", a: ["Policía", "ANAC", "Sindicato"], c: 1 }
+                { q: "¿Plazo para reportar un incidente de DG a la ANAC?", a: ["24hs", "72hs", "7 días"], c: 1 },
+                { q: "Acción recomendada ante humo tóxico en cabina de Helo:", a: ["Cerrar todo", "Aislar bulto y abrir storm window", "Aumentar altitud"], c: 1 },
+                { q: "¿Qué manual técnico se usa ante derrames químicos?", a: ["Guía ERG (OACI)", "Checklist normal", "Manual de Vuelo"], c: 1 },
+                { q: "¿Qué es una MP oculta?", a: ["Carga pesada", "Artículos peligrosos no declarados", "Cajas negras"], c: 1 },
+                { q: "¿A quién se le notifica una emergencia de DG en vuelo?", a: ["A nadie", "Al ATS (Controlador)", "Al dueño del Helo"], c: 1 }
             ],
-            7: [ // EXAMEN FINAL 30 PREGUNTAS (Resumido para demo, pero cargando las 30 reales)
-                { q: "1. ¿Límite presión para bultos con líquidos?", a: ["75 kPa", "95 kPa", "110 kPa"], c: 1 },
-                { q: "2. ¿Sustancias que emiten gases inflamables con agua?", a: ["4.1", "4.3", "5.1"], c: 1 },
-                { q: "3. ¿Marca de tambor re-acondicionado?", a: ["R", "UN-R", "REC"], c: 0 },
-                { q: "4. ¿Código para Jerrican plástico tapa fija?", a: ["3A1", "3H1", "6H2"], c: 1 },
-                { q: "5. ¿Qué significa código 'V' en embalaje?", a: ["Vidrio", "Prueba especial recipientes", "Vapor"], c: 1 },
-                { q: "6. ¿Sublimación de hielo seco?", a: ["200 vol.", "800 vol.", "1500 vol."], c: 1 },
-                { q: "7. ¿Qué es una Variación de Operador?", a: ["Error", "Regla más estricta aerolínea", "Cambio ruta"], c: 1 },
-                { q: "8. ¿Etiqueta riesgo subsidiario?", a: ["Completa", "Sin número abajo", "Blanca"], c: 1 },
-                { q: "9. ¿Distancia radioactivos?", a: ["2m", "Depende del TI", "0m"], c: 1 },
-                { q: "10. ¿Qué es Overpack?", a: ["Sobrepeso", "Embalaje contenedor bultos", "Exceso"], c: 1 },
-                { q: "11. ¿Sección de objetos prohibidos?", a: ["2.1", "1.1", "10.1"], c: 0 },
+            7: [ // EXAMEN INTEGRAL 30 PREGUNTAS
+                { q: "1. ¿Límite de presión para embalaje de líquidos?", a: ["75 kPa", "95 kPa", "110 kPa"], c: 1 },
+                { q: "2. ¿Clase que emite gases inflamables con agua?", a: ["4.1", "4.3", "5.1"], c: 1 },
+                { q: "3. ¿Marca UN para tambor re-acondicionado?", a: ["R", "UN-R", "REC"], c: 0 },
+                { q: "4. ¿Código para tambor de acero?", a: ["4G", "1A", "3H1"], c: 1 },
+                { q: "5. ¿Qué significa código 'V' en un bulto?", a: ["Vidrio", "Prueba especial recipientes", "Vapor"], c: 1 },
+                { q: "6. ¿Volumen de gas del hielo seco al sublimar?", a: ["200 vol.", "800 vol.", "1500 vol."], c: 1 },
+                { q: "7. ¿Qué es una Variación de Operador?", a: ["Falla técnica", "Regla más estricta aerolínea", "Cambio ruta"], c: 1 },
+                { q: "8. ¿Etiqueta de riesgo subsidiario?", a: ["Igual que principal", "Sin número abajo", "Blanca"], c: 1 },
+                { q: "9. ¿Distancia mínima radioactivos?", a: ["2m", "Depende del TI", "0m"], c: 1 },
+                { q: "10. ¿Qué es un Overpack?", a: ["Sobrepeso", "Caja contenedora de bultos UN", "Exceso"], c: 1 },
+                { q: "11. ¿Sección OACI de objetos prohibidos?", a: ["2.1", "1.1", "10.1"], c: 0 },
                 { q: "12. ¿Marca para radioactivo baja actividad?", a: ["LSA", "LOW", "7.4"], c: 0 },
                 { q: "13. ¿Baterías de litio no recargables?", a: ["Ion", "Metal", "Polímero"], c: 1 },
-                { q: "14. ¿Error en tambor de combustible?", a: ["Corregir", "Rechazo", "Aceptar"], c: 1 },
-                { q: "15. ¿Número en esquina de etiqueta?", a: ["Peso", "Clase/División", "Orden"], c: 1 },
-                { q: "16. ¿Clase sin GE?", a: ["3", "2", "8"], c: 1 },
-                { q: "17. ¿Extintor para litio?", a: ["CO2", "Agua o Halón", "Polvo"], c: 1 },
-                { q: "18. ¿Cantidades Exceptuadas?", a: ["Regalo", "Reglas mínimas", "Sin tasa"], c: 1 },
-                { q: "19. ¿UN AVGAS?", a: ["1863", "1203", "1111"], c: 1 },
-                { q: "20. ¿Qué verifica piloto en NOTOC?", a: ["Precio", "Centro Gravedad", "Marca"], c: 1 },
-                { q: "21. ¿Sangre VIH?", a: ["Cat B", "Cat A (UN 2814)", "No Pelig."], c: 1 },
-                { q: "22. ¿Batería con equipo?", a: ["3480", "3481", "3090"], c: 1 },
-                { q: "23. ¿Letra 'W' en código?", a: ["Weather", "Eq. equivalente", "Warn"], c: 1 },
-                { q: "24. ¿Avión Pasajeros?", a: ["Solo comercial", "Sin tripulación extra", "Privado"], c: 1 },
-                { q: "25. ¿Escarcha en bulto?", a: ["Limpiar", "Evitar contacto", "Ignorar"], c: 1 },
-                { q: "26. ¿Etiqueta animal vivo?", a: ["Peligro", "Animal labels", "CAO"], c: 1 },
-                { q: "27. ¿Flash Point?", a: ["Despegue", "Temp. vapores inflamables", "Apagado"], c: 1 },
-                { q: "28. ¿Marca 'Y' en exceptuados?", a: ["Limitada", "N/A", "Argentina"], c: 1 },
-                { q: "29. ¿Caída GE II?", a: ["0.8m", "1.2m", "1.8m"], c: 1 },
-                { q: "30. ¿Firma Checklist?", a: ["Expedidor", "Persona aceptación", "Piloto"], c: 1 }
+                { q: "14. ¿Acción ante tambor de combustible con fuga?", a: ["Parche", "Rechazo inmediato", "Aceptar"], c: 1 },
+                { q: "15. ¿Información en esquina de etiqueta?", a: ["Peso", "Clase/División", "Orden"], c: 1 },
+                { q: "16. ¿Clase sin Grupo de Embalaje?", a: ["3", "2 (Gases)", "8"], c: 1 },
+                { q: "17. ¿Extintor recomendado para litio?", a: ["CO2", "Agua / Halón", "Polvo"], c: 1 },
+                { q: "18. ¿Cantidades Exceptuadas?", a: ["Sin cargo", "Reglas mínimas / Qte pequeñas", "Solo carga"], c: 1 },
+                { q: "19. ¿Número UN del combustible Jet A-1?", a: ["UN 1863", "UN 1203", "UN 1111"], c: 0 },
+                { q: "20. ¿Prioridad del piloto al mando?", a: ["Llegar rápido", "Seguridad del vuelo (RAAC 18)", "Cargar todo"], c: 1 },
+                { q: "21. ¿Muestras infecciosas Categoría A?", a: ["UN 3373", "UN 2814", "No es DG"], c: 1 },
+                { q: "22. ¿Batería de polímero de litio suelta?", a: ["UN 3480", "UN 3481", "UN 3090"], c: 0 },
+                { q: "23. ¿Qué indica la letra 'W' en un código?", a: ["Weather", "Caja equivalente no estándar", "Warn"], c: 1 },
+                { q: "24. ¿Avión de Pasajeros (definición)?", a: ["Comercial", "Cualquiera con personas extra", "Privado"], c: 1 },
+                { q: "25. ¿Hielo en la superficie de un criogénico?", a: ["Normal", "Evitar contacto (Fuga)", "Ignorar"], c: 1 },
+                { q: "26. ¿Etiqueta para leones o perros?", a: ["CAO", "Animal Viviente", "Misceláneo"], c: 1 },
+                { q: "27. ¿Punto de inflamación?", a: ["Humo", "Temp desprendimiento gases", "Fuego"], c: 1 },
+                { q: "28. ¿Variación de Estado de Argentina?", a: ["ARG-01", "RAAC-1", "V-AR"], c: 0 },
+                { q: "29. ¿Altura caída GE I?", a: ["0.8m", "1.8m", "1.2m"], c: 1 },
+                { q: "30. ¿Firma final de checklist?", a: ["Cargador", "Persona aceptación", "Aduana"], c: 1 }
             ]
         };
 
@@ -544,8 +626,8 @@
             const container = document.getElementById(`quiz${id}`);
             if (!container) return;
             container.innerHTML = quizzes[id].map((item, i) => `
-                <div style="margin-bottom: 2rem; background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 12px;">
-                    <p><strong>${item.q}</strong></p>
+                <div style="margin-bottom: 2rem; background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+                    <p style="text-align:left;"><strong>${item.q}</strong></p>
                     ${item.a.map((opt, oi) => `
                         <label class="quiz-option">
                             <input type="radio" name="q${id}_${i}" value="${oi}"> ${opt}
@@ -566,13 +648,10 @@
             });
 
             if (correct >= min) {
-                alert(`¡Resultado Aprobado! (${correct}/${total}). Avanzando al siguiente nivel.`);
+                alert(`¡FELICITACIONES! Aprobado con ${correct}/${total}.`);
                 if (id < 7) unlockNext(id + 1);
-                else {
-                    alert("¡FELICITACIONES! HAS COMPLETADO EL CURSO PROFESIONAL RAAC 18.");
-                }
             } else {
-                alert(`Resultado Insuficiente: ${correct}/${total}. Necesitas al menos ${min} correctas para avanzar.`);
+                alert(`PUNTAJE INSUFICIENTE: ${correct}/${total}. Debe revisar los temas de este módulo.`);
             }
         }
 
@@ -582,14 +661,14 @@
             nav.classList.remove('locked');
             nav.classList.add('completed');
             const badge = nav.querySelector('.status-badge');
-            badge.innerText = "UNLOCKED";
+            badge.innerText = "DESBLOQUEADO";
             badge.className = "status-badge status-unlocked";
             showModule(id);
         }
 
         function showModule(id) {
             if (id > currentProgress) {
-                alert("Debes completar los exámenes anteriores.");
+                alert("Módulo bloqueado. Complete las evaluaciones anteriores.");
                 return;
             }
             document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
@@ -601,7 +680,7 @@
             renderQuiz(id);
         }
 
-        // Init first module
+        // Init
         renderQuiz(1);
     </script>
 </body>
