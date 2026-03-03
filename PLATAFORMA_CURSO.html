@@ -283,14 +283,77 @@
                 { q: "¿Qué es un número UN?", a: ["Un código de barra", "Num. de identificación de la ONU", "Lote de fabricación"], c: 1 },
                 { q: "¿Cuál es la clase de los gases inflamables?", a: ["2.1", "2.2", "2.3"], c: 0 },
                 { q: "¿Qué tabla identifica mercancías prohibidas?", a: ["Tabla A", "Tabla de Segregación", "Lista de MP (Azul)"], c: 2 }
+            ],
+            3: [
+                { q: "¿Qué significa la letra 'X' en un código de embalaje UN?", a: ["GE I", "GE II", "GE III"], c: 0 },
+                { q: "¿Cuál es la etiqueta necesaria para bultos con líquidos en envases combinados?", a: ["CAO", "Orientación (Flechas)", "Radioactivo"], c: 1 },
+                { q: "¿Qué indica la letra 'Y' en una marca UN?", a: ["GE II y III", "GE I solamente", "Vuelo nacional"], c: 0 },
+                { q: "¿Se puede usar una caja de cartón estándar para líquidos inflamables?", a: ["Sí, si es gruesa", "No, requiere especificación UN", "Solo en helicópteros"], c: 1 },
+                { q: "¿Qué marca indica 'Cantidades Limitadas'?", a: ["Diamante con 'Y'", "Circulo rojo", "Triángulo amarillo"], c: 0 }
+            ],
+            4: [
+                { q: "¿Quién debe firmar obligatoriamente la DGD?", a: ["El Piloto", "El Expedidor", "El Agente de Aduana"], c: 1 },
+                { q: "¿Se permite el uso de corrector líquido en la DGD?", a: ["Sí", "No", "Solo en la cantidad"], c: 1 },
+                { q: "¿Qué documento indica la ubicación exacta de la carga en bodega?", a: ["Manifiesto", "NOTOC", "Guía Aérea"], c: 1 },
+                { q: "¿Qué tabla verifica si un ácido y una base pueden cargarse juntos?", a: ["Tabla A", "Tabla de Segregación", "NOTOC"], c: 1 },
+                { q: "¿Quién entrega el NOTOC al piloto?", a: ["El expedidor", "El explotador (empresa aérea)", "La DGAC"], c: 1 }
+            ],
+            5: [
+                { q: "¿Cuál es el SoC máximo para UN 3480 en aviones de pasajeros?", a: ["50%", "100%", "30%"], c: 2 },
+                { q: "¿Qué gas desplaza el oxígeno al sublimarse el hielo seco?", a: ["Oxígeno", "CO2 (Dióxido de Carbono)", "Nitrógeno"], c: 1 },
+                { q: "¿Cómo se llama el proceso de fuego en cadena en baterías de litio?", a: ["Incendio rápido", "Fuga Térmica (Thermal Runaway)", "Explosión Clase 1"], c: 1 },
+                { q: "¿El embalaje de hielo seco debe ser hermético?", a: ["Sí", "No, debe permitir ventilación", "Solo en invierno"], c: 1 },
+                { q: "¿A qué categoría pertenece una laptop con batería?", a: ["UN 3480", "UN 3481", "UN 3090"], c: 1 }
+            ],
+            6: [
+                { q: "¿Primer paso ante un derrame en cabina de helicóptero?", a: ["Limpiar con agua", "Aislar el área", "Pisar la mancha"], c: 1 },
+                { q: "¿Qué guía indica la respuesta técnica inmediata?", a: ["Manual de Vuelo", "Guía ERG (OACI)", "Checklist normal"], c: 1 },
+                { q: "¿Plazo para reportar un incidente DG a la autoridad?", a: ["24 horas", "72 horas", "7 días"], c: 1 },
+                { q: "¿Cómo recomienda ventilar un helicóptero ante humos tóxicos?", a: ["Encender el aire acondicionado", "Abrir ventanilla de tormenta/puerta", "Cerrar todo"], c: 1 },
+                { q: "¿Cuál es un ejemplo de MP oculta común?", a: ["Ropa", "Pinturas/Gas de camping", "Libros"], c: 1 }
+            ],
+            7: [ // Examen Final 30 preguntas
+                { q: "1. ¿Límite de presión para embalaje de líquidos?", a: ["75 kPa", "95 kPa", "110 kPa"], c: 1 },
+                { q: "2. ¿Sustancias que emiten gases inflamables con agua?", a: ["4.1", "4.3", "5.1"], c: 1 },
+                { q: "3. ¿Marca de tambor re-acondicionado?", a: ["R", "UN-R", "REC"], c: 0 },
+                { q: "4. ¿Código para Jerrican plástico tapa fija?", a: ["3A1", "3H1", "6H2"], c: 1 },
+                { q: "5. ¿Qué significa código 'V' en embalaje?", a: ["Vidrio", "Prueba especial con recipientes internos", "Vapor"], c: 1 },
+                { q: "6. ¿Sublimación de hielo seco?", a: ["200 vol.", "800 vol.", "1500 vol."], c: 1 },
+                { q: "7. ¿Qué es una Variación de Operador?", a: ["Error", "Regla más estricta de aerolínea", "Cambio ruta"], c: 1 },
+                { q: "8. ¿Etiqueta riesgo subsidiario?", a: ["Completa", "Sin número abajo", "Blanca"], c: 1 },
+                { q: "9. ¿Distancia radioactivos?", a: ["2m", "Depende del TI", "0m"], c: 1 },
+                { q: "10. ¿Qué es Overpack?", a: ["Sobrepeso", "Embalaje contenedor de bultos", "Exceso"], c: 1 },
+                { q: "11. ¿Sección de objetos prohibidos?", a: ["2.1", "1.1", "10.1"], c: 0 },
+                { q: "12. ¿Marca para radioactivo baja actividad?", a: ["LSA", "LOW", "7.4"], c: 0 },
+                { q: "13. ¿Baterías de litio no recargables?", a: ["Ion", "Metal", "Polímero"], c: 1 },
+                { q: "14. ¿Error en tambor de combustible?", a: ["Corregir", "Rechazo", "Aceptar"], c: 1 },
+                { q: "15. ¿Número en esquina de etiqueta?", a: ["Peso", "Clase/División", "Orden"], c: 1 },
+                { q: "16. ¿Clase sin GE?", a: ["3", "2", "8"], c: 1 },
+                { q: "17. ¿Extintor para litio?", a: ["CO2", "Agua/Halón", "Polvo"], c: 1 },
+                { q: "18. ¿Cantidades Exceptuadas?", a: ["Regalo", "Pequeñas con reglas mínimas", "Sin TAX"], c: 1 },
+                { q: "19. ¿UN AVGAS?", a: ["1863", "1203", "1111"], c: 1 },
+                { q: "20. ¿Qué verifica piloto en NOTOC?", a: ["Precio", "Centro Gravedad", "Marca"], c: 1 },
+                { q: "21. ¿Sangre VIH?", a: ["Cat B", "Cat A (UN 2814)", "No Pelig."], c: 1 },
+                { q: "22. ¿Batería con equipo?", a: ["3480", "3481", "3090"], c: 1 },
+                { q: "23. ¿Letra 'W' en código?", a: ["Weather", "Diferente pero equivalente", "Warn"], c: 1 },
+                { q: "24. ¿Avión Pasajeros?", a: ["Comercial", "Cualquiera con no-tripulación", "Privado"], c: 1 },
+                { q: "25. ¿Escarcha en bulto?", a: ["Limpiar", "Evitar contacto", "Ignorar"], c: 1 },
+                { q: "26. ¿Etiqueta animal vivo?", a: ["Peligro", "Animal labels", "CAO"], c: 1 },
+                { q: "27. ¿Flash Point?", a: ["Despegue", "Temp. vapores inflamables", "Apagado"], c: 1 },
+                { q: "28. ¿Marca 'Y' en exceptuados?", a: ["Limitada", "N/A", "Chile"], c: 1 },
+                { q: "29. ¿Caída GE II?", a: ["0.8m", "1.2m", "1.8m"], c: 1 },
+                { q: "30. ¿Firma Checklist?", a: ["Expedidor", "Aceptación aerolínea", "Piloto"], c: 1 }
             ]
-            // Agregar más quizzes para 3, 4, 5, 6...
         };
 
         function renderQuiz(modId) {
             const container = document.getElementById(`quiz${modId}`);
             if (!container) return;
-            container.innerHTML = quizzes[modId].map((q, i) => `
+            const title = modId === 7 ? "Examen Final de Certificación (30 Preguntas)" : `Cuestionario de Acceso al Módulo ${(modId + 1)}`;
+            const minCorrect = modId === 7 ? 24 : 3;
+
+            container.innerHTML = `<h3>${title}</h3><p>Responde correctamente ${minCorrect} cuestionamientos para avanzar.</p>` +
+                quizzes[modId].map((q, i) => `
                 <div style="margin-bottom:1.5rem">
                     <p><strong>${q.q}</strong></p>
                     ${q.a.map((opt, oi) => `
@@ -304,16 +367,23 @@
 
         function validateQuiz(modId) {
             let correct = 0;
+            const minRequired = modId === 7 ? 24 : 3;
+
             quizzes[modId].forEach((q, i) => {
                 const sel = document.querySelector(`input[name="q${modId}_${i}"]:checked`);
                 if (sel && parseInt(sel.value) === q.c) correct++;
             });
 
-            if (correct >= 3) {
-                alert(`¡Excelente! Aprobado con ${correct}/5. Módulo siguiente desbloqueado.`);
-                unlockModule(modId + 1);
+            if (correct >= minRequired) {
+                alert(`¡Excelente! Aprobado con ${correct}/${quizzes[modId].length}.`);
+                if (modId < 7) {
+                    unlockModule(modId + 1);
+                } else {
+                    document.getElementById('nav-exam').style.color = 'gold';
+                    alert("¡FELICITACIONES! Has completado el curso completo de Mercancías Peligrosas.");
+                }
             } else {
-                alert(`Puntaje: ${correct}/5. Necesitas al menos 3 correctas para avanzar. Estudia el material y vuelve a intentarlo.`);
+                alert(`Resultado: ${correct}/${quizzes[modId].length}. Necesitas al menos ${minRequired} para aprobar.`);
             }
         }
 
