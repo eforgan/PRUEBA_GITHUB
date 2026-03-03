@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma E-Learning: Mercancías Peligrosas en Helicópteros</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0062ff;
+            --accent: #ff9f00;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --glass: rgba(255, 255, 255, 0.05);
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --success: #10b981;
+            --locked: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 300px;
+            height: 100vh;
+            background: rgba(15, 23, 42, 0.95);
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            z-index: 100;
+        }
+
+        .nav-item {
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            border-radius: 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s;
+            background: rgba(255, 255, 255, 0.03);
+            color: #94a3b8;
+        }
+
+        .nav-item.active {
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+
+        .nav-item.locked {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background: transparent;
+        }
+
+        .nav-item.completed {
+            color: var(--success);
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 300px;
+            padding: 4rem;
+            max-width: 1200px;
+        }
+
+        .content-section {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .image-box {
+            width: 100%;
+            background: #1e293b;
+            border-radius: 20px;
+            margin: 2rem 0;
+            padding: 1rem;
+            text-align: center;
+            border: 1px dashed #475569;
+        }
+
+        .image-box img {
+            max-width: 100%;
+            border-radius: 12px;
+        }
+
+        .diagram-container {
+            background: white;
+            color: black;
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+        }
+
+        /* Quiz Styling */
+        .quiz-container {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2.5rem;
+            border-radius: 24px;
+            margin-top: 3rem;
+            border: 1px solid var(--primary);
+        }
+
+        .quiz-option {
+            display: block;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            margin-bottom: 0.8rem;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .quiz-option:hover {
+            background: rgba(0, 98, 255, 0.2);
+        }
+
+        .btn-next {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 2rem;
+        }
+
+        .btn-next:disabled {
+            background: var(--locked);
+            cursor: not-allowed;
+        }
+
+        /* Icons */
+        .badge {
+            font-size: 0.8rem;
+            background: #334155;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <h3 style="margin-bottom: 2rem; color: var(--accent);">CURSO DG HELO</h3>
+        <div id="nav-mod1" class="nav-item active" onclick="showModule(1)">
+            <span>1</span> Marco Legal
+        </div>
+        <div id="nav-mod2" class="nav-item locked" onclick="showModule(2)">
+            <span>2</span> Clasificación
+        </div>
+        <div id="nav-mod3" class="nav-item locked" onclick="showModule(3)">
+            <span>3</span> Embalaje y Etiquetas
+        </div>
+        <div id="nav-mod4" class="nav-item locked" onclick="showModule(4)">
+            <span>4</span> Documentación
+        </div>
+        <div id="nav-mod5" class="nav-item locked" onclick="showModule(5)">
+            <span>5</span> Litio y Hielo Seco
+        </div>
+        <div id="nav-mod6" class="nav-item locked" onclick="showModule(6)">
+            <span>6</span> Emergencias
+        </div>
+        <div id="nav-exam" class="nav-item locked" onclick="showModule(7)">
+            <span>★</span> Examen Final
+        </div>
+    </div>
+
+    <div class="main-content">
+
+        <!-- MODULO 1 -->
+        <div id="mod1" class="content-section active">
+            <h1 style="font-size: 3rem; margin-bottom: 1.5rem;">Módulo 1: Fundamentos y Marco Legal</h1>
+            <p>El transporte de mercancías peligrosas en helicópteros es una operación de alta precisión. A diferencia
+                de los aviones comerciales, los helicópteros a menudo operan en entornos no controlados (helipads
+                remotos, plataformas off-shore, zonas de montaña).</p>
+
+            <div class="image-box">
+                <img src="./helicopter_hems_safety.png" alt="HEMS Operation"
+                    onerror="this.src='https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80'">
+                <p style="font-size: 0.8rem; margin-top: 0.5rem; color: #64748b;">Figura 1: Operación HEMS donde el
+                    manejo de botellas de oxígeno es crítico.</p>
+            </div>
+
+            <h3>Estructura Regulatoria</h3>
+            <div class="diagram-container">
+                <div style="color: #0f172a; text-align: center;">
+                    <strong>Jerarquía Legal</strong><br><br>
+                    <div style="border: 2px solid #0062ff; padding: 10px; margin: 5px;">OACI (Anexo 18) - Normativa
+                        Global</div>
+                    <div style="font-size: 20px;">⬇</div>
+                    <div style="border: 2px solid #ff9f00; padding: 10px; margin: 5px;">DGAC Chile (DAR-18) - Ley
+                        Nacional</div>
+                    <div style="font-size: 20px;">⬇</div>
+                    <div style="border: 2px solid #10b981; padding: 10px; margin: 5px;">IATA DGR - Estándar Operativo
+                        Comercial</div>
+                </div>
+            </div>
+
+            <div class="quiz-container">
+                <h3>Cuestionario de Acceso al Módulo 2</h3>
+                <p>Responde correctamente 3 de 5 para avanzar.</p>
+                <div id="quiz1"></div>
+                <button class="btn-next" id="btn1" onclick="validateQuiz(1)">Validar y Continuar</button>
+            </div>
+        </div>
+
+        <!-- MODULO 2 -->
+        <div id="mod2" class="content-section">
+            <h1>Módulo 2: Clasificación de Riesgo</h1>
+            <p>Identificación técnica de sustancias. En helicópteros manejamos principalmente Clase 2 (Gases), Clase 3
+                (Combustibles) y Clase 9 (Litio).</p>
+            <div class="image-box">
+                <img src="./dg_labels_infographic_1772558418662.png" alt="Etiquetas"
+                    onerror="this.src='https://www.iata.org/contentassets/3b6b4b7bf74b4b4b4b4b4b4b4b4b4b4b/dg-labels.jpg'">
+            </div>
+            <div class="quiz-container">
+                <h3>Cuestionario de Acceso al Módulo 3</h3>
+                <div id="quiz2"></div>
+                <button class="btn-next" id="btn2" onclick="validateQuiz(2)">Validar y Continuar</button>
+            </div>
+        </div>
+
+        <!-- Módulos restantes siguiendo el mismo patrón... -->
+        <div id="mod-generic" class="content-section">
+            <h1>Desarrollando Contenido...</h1>
+            <p>Próximos módulos cargándose secuencialmente.</p>
+        </div>
+
+    </div>
+
+    <script>
+        let userProgress = 1;
+
+        const quizzes = {
+            1: [
+                { q: "¿Qué documento legal aplica específicamente en Chile?", a: ["DAR-18", "Anexo 17", "Manual IATA"], c: 0 },
+                { q: "¿Quién es el responsable de CLASIFICAR la mercancía?", a: ["El Piloto", "El Expedidor", "El Explotador"], c: 1 },
+                { q: "¿Qué significa NOTOC?", a: ["Nota de Carga", "Notification to Captain", "No tocar la carga"], c: 1 },
+                { q: "¿El IATA DGR es más o menos restrictivo que OACI?", a: ["Igual", "Más restrictivo", "Menos restrictivo"], c: 1 },
+                { q: "¿Qué anexo de OACI regula DG?", a: ["Anexo 1", "Anexo 18", "Anexo 14"], c: 1 }
+            ],
+            2: [
+                { q: "¿A qué clase pertenecen las baterías de litio?", a: ["Clase 3", "Clase 7", "Clase 9"], c: 2 },
+                { q: "¿Qué GE representa el peligro mayor?", a: ["GE III", "GE I", "GE II"], c: 1 },
+                { q: "¿Qué es un número UN?", a: ["Un código de barra", "Num. de identificación de la ONU", "Lote de fabricación"], c: 1 },
+                { q: "¿Cuál es la clase de los gases inflamables?", a: ["2.1", "2.2", "2.3"], c: 0 },
+                { q: "¿Qué tabla identifica mercancías prohibidas?", a: ["Tabla A", "Tabla de Segregación", "Lista de MP (Azul)"], c: 2 }
+            ]
+            // Agregar más quizzes para 3, 4, 5, 6...
+        };
+
+        function renderQuiz(modId) {
+            const container = document.getElementById(`quiz${modId}`);
+            if (!container) return;
+            container.innerHTML = quizzes[modId].map((q, i) => `
+                <div style="margin-bottom:1.5rem">
+                    <p><strong>${q.q}</strong></p>
+                    ${q.a.map((opt, oi) => `
+                        <label class="quiz-option">
+                            <input type="radio" name="q${modId}_${i}" value="${oi}"> ${opt}
+                        </label>
+                    `).join('')}
+                </div>
+            `).join('');
+        }
+
+        function validateQuiz(modId) {
+            let correct = 0;
+            quizzes[modId].forEach((q, i) => {
+                const sel = document.querySelector(`input[name="q${modId}_${i}"]:checked`);
+                if (sel && parseInt(sel.value) === q.c) correct++;
+            });
+
+            if (correct >= 3) {
+                alert(`¡Excelente! Aprobado con ${correct}/5. Módulo siguiente desbloqueado.`);
+                unlockModule(modId + 1);
+            } else {
+                alert(`Puntaje: ${correct}/5. Necesitas al menos 3 correctas para avanzar. Estudia el material y vuelve a intentarlo.`);
+            }
+        }
+
+        function unlockModule(modId) {
+            userProgress = modId;
+            const nav = document.getElementById(`nav-mod${modId}`);
+            if (nav) {
+                nav.classList.remove('locked');
+                nav.classList.add('completed'); // Estilo visual de desbloqueado
+                showModule(modId);
+            }
+        }
+
+        function showModule(modId) {
+            if (modId > userProgress) {
+                alert("Este módulo está bloqueado. Debes aprobar el examen del módulo anterior.");
+                return;
+            }
+
+            document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+
+            const target = document.getElementById(`mod${modId}`);
+            if (target) target.classList.add('active');
+            else document.getElementById('mod-generic').classList.add('active');
+
+            document.getElementById(`nav-mod${modId}`)?.classList.add('active');
+
+            if (quizzes[modId]) renderQuiz(modId);
+        }
+
+        // Inicializar primer quiz
+        renderQuiz(1);
+    </script>
+</body>
+
+</html>
