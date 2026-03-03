@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso Pro: Mercancías Peligrosas en Helicópteros</title>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --primary: #0062ff;
@@ -31,7 +34,9 @@
             overflow-x: hidden;
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             font-family: 'Outfit', sans-serif;
             font-weight: 700;
         }
@@ -44,7 +49,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background: linear-gradient(135deg, rgba(0,98,255,0.2) 0%, rgba(15,23,42,1) 100%);
+            background: linear-gradient(135deg, rgba(0, 98, 255, 0.2) 0%, rgba(15, 23, 42, 1) 100%);
             padding: 2rem;
             position: relative;
         }
@@ -54,6 +59,7 @@
             margin-bottom: 1rem;
             background: linear-gradient(to right, #60a5fa, #ffffff);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -83,7 +89,7 @@
 
         .module-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
         }
 
         .module-card h2 {
@@ -109,7 +115,7 @@
             width: 100%;
             border-radius: 16px;
             margin: 2rem 0;
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             overflow: hidden;
         }
 
@@ -184,7 +190,7 @@
             margin-right: 10px;
         }
 
-        input[type="radio"]:checked + span {
+        input[type="radio"]:checked+span {
             font-weight: 600;
         }
 
@@ -217,7 +223,7 @@
             backdrop-filter: blur(10px);
             padding: 0.8rem 2rem;
             border-radius: 40px;
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             z-index: 1000;
             display: flex;
             gap: 20px;
@@ -236,12 +242,21 @@
         }
 
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
-            .container { margin-top: -50px; }
-            .exam-section { padding: 2rem; }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .container {
+                margin-top: -50px;
+            }
+
+            .exam-section {
+                padding: 2rem;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <div class="nav">
@@ -256,18 +271,21 @@
 
     <header class="hero">
         <h1>Transporte de Mercancías Peligrosas</h1>
-        <p>Curso especializado en operaciones de helicópteros (HEMS, Carga Externa, AW109SP). Basado en normativas IATA 2025 y DAR-18.</p>
+        <p>Curso especializado en operaciones de helicópteros (HEMS, Carga Externa, AW109SP). Basado en normativas IATA
+            2025 y RAAC Parte 18 (Argentina).</p>
     </header>
 
     <div class="container">
-        
+
         <!-- Módulo 1 -->
         <section id="mod1" class="module-card">
             <h2>Módulo 1: Fundamentos</h2>
-            <p>Este módulo establece el marco legal internacional y nacional. En helicópteros, la responsabilidad del piloto aumenta en zonas remotas.</p>
+            <p>Este módulo establece el marco legal internacional y nacional. En helicópteros, la responsabilidad del
+                piloto aumenta en zonas remotas.</p>
             <div class="helo-case">
                 <h4>CASO HELICÓPTEROS</h4>
-                <p>En operaciones fuera de base (ej. helipads remotos), el piloto debe verificar personalmente que la carga cumpla con el DAR-18, actuando como filtro de seguridad final.</p>
+                <p>En operaciones fuera de base (ej. helipads remotos en Argentina), el piloto debe verificar
+                    personalmente que la carga cumpla con la RAAC Parte 18, actuando como filtro de seguridad final.</p>
             </div>
         </section>
 
@@ -280,7 +298,9 @@
             </div>
             <div class="helo-case">
                 <h4>PROTOTIPO OPERACIONAL</h4>
-                <p>Uso de botellas de oxígeno médico en HEMS (Clase 2.2). Deben estar debidamente ancladas siguiendo el STC (Supplemental Type Certificate) de la aeronave para evitar proyectiles en caso de turbulencia.</p>
+                <p>Uso de botellas de oxígeno médico en HEMS (Clase 2.2). Deben estar debidamente ancladas siguiendo el
+                    STC (Supplemental Type Certificate) de la aeronave para evitar proyectiles en caso de turbulencia.
+                </p>
             </div>
         </section>
 
@@ -290,7 +310,8 @@
             <p>La importancia del embalaje UN certificado y la etiqueta de orientación.</p>
             <div class="helo-case">
                 <h4>TIPS DE CABINA</h4>
-                <p>En el AW109, el acceso a la bodega es limitado. Las etiquetas de orientación deben ser visibles desde el portalón de carga para asegurar que el bulto ha sido colocado correctamente antes de cerrar.</p>
+                <p>En el AW109, el acceso a la bodega es limitado. Las etiquetas de orientación deben ser visibles desde
+                    el portalón de carga para asegurar que el bulto ha sido colocado correctamente antes de cerrar.</p>
             </div>
         </section>
 
@@ -300,7 +321,8 @@
             <p>La Declaración (DGD) y el NOTOC. Sin papeles, no hay vuelo.</p>
             <div class="helo-case">
                 <h4>OPERACIÓN MINERA</h4>
-                <p>Verificación de la firma del expedidor en plataformas off-shore. El NOTOC debe incluir el código de emergencia ERG para que el piloto sepa qué hacer si detecta olor a químico en la cabina.</p>
+                <p>Verificación de la firma del expedidor en plataformas off-shore. El NOTOC debe incluir el código de
+                    emergencia ERG para que el piloto sepa qué hacer si detecta olor a químico en la cabina.</p>
             </div>
         </section>
 
@@ -310,7 +332,8 @@
             <p>El mayor riesgo en la aviación moderna: Baterías de Litio y el CO2 del Hielo Seco.</p>
             <div class="helo-case">
                 <h4>MISIÓN CRÍTICA</h4>
-                <p>Sensores y cámaras del AW109SP. Cuando transporte baterías de repuesto, asegúrese de que tengan el 30% de carga (SoC) para minimizar el riesgo de fuego térmico.</p>
+                <p>Sensores y cámaras del AW109SP. Cuando transporte baterías de repuesto, asegúrese de que tengan el
+                    30% de carga (SoC) para minimizar el riesgo de fuego térmico.</p>
             </div>
         </section>
 
@@ -320,7 +343,8 @@
             <p>Protocolos de acción ante derrames o fuego.</p>
             <div class="helo-case">
                 <h4>ACCION RÁPIDA</h4>
-                <p>En cabinas pequeñas, la ventilación de emergencia es prioritaria. Abra la ventanilla de tormenta (storm window) si es posible para ventilar vapores tóxicos.</p>
+                <p>En cabinas pequeñas, la ventilación de emergencia es prioritaria. Abra la ventanilla de tormenta
+                    (storm window) si es posible para ventilar vapores tóxicos.</p>
             </div>
         </section>
 
@@ -330,13 +354,15 @@
                 <h2>Examen Final de Certificación</h2>
                 <p>Responda las 30 preguntas de selección múltiple. Solo una opción es correcta.</p>
             </div>
-            
+
             <form id="quizForm">
                 <!-- Las preguntas se inyectarán vía JS o se escriben aquí -->
                 <div id="questionsContainer"></div>
                 <button type="button" class="btn" onclick="checkResults()">Verificar Resultados</button>
             </form>
-            <div id="resultDisplay" style="text-align:center; font-size:1.5rem; margin-top:2rem; font-weight:bold; color:var(--primary);"></div>
+            <div id="resultDisplay"
+                style="text-align:center; font-size:1.5rem; margin-top:2rem; font-weight:bold; color:var(--primary);">
+            </div>
         </section>
 
     </div>
@@ -370,9 +396,9 @@
             { q: "25. ¿Qué acción tomar si un bulto presenta signos de escarcha externa?", a: ["Limpiarlo con agua", "Evitar contacto (posible fuga criogénica)", "Ignorarlo si no huele"], c: 1 },
             { q: "26. ¿Qué etiqueta de manipulación es obligatoria para animales vivos?", a: ["Etiqueta de Peligro", "Animals labels", "Etiqueta CAO"], c: 1 },
             { q: "27. ¿Cómo se define el 'Punto de Inflamación' (Flash Point)?", a: ["Cuando el avión despega", "Temperatura mínima a la que desprende vapores flamables", "Cuando se apaga el motor"], c: 1 },
-            { q: "28. ¿Qué significa la marca 'Y' en un embalaje exceptuado de baterías de litio?", a: ["Cantidad Limitada", "No aplica", "Fabricado en Chile"], c: 1 },
+            { q: "28. ¿Qué significa la marca 'Y' en un bulto de baterías de litio según IATA?", a: ["Cantidad Limitada", "No aplica", "Argentina"], c: 1 },
             { q: "29. ¿Qué altura de caída debe resistir un embalaje de Grupo II?", a: ["0.8 metros", "1.2 metros", "1.8 metros"], c: 1 },
-            { q: "30. ¿Quién debe firmar obligatoriamente la lista de verificación (Checklist)?", a: ["El expedidor", "Personal de la aerolínea (Aceptación)", "El piloto"], c: 1 }
+            { q: "30. ¿Quién debe firmar obligatoriamente la lista de verificación (Checklist) en Argentina?", a: ["El expedidor", "Personal de la aerolínea (Aceptación)", "El piloto"], c: 1 }
         ];
 
         const container = document.getElementById('questionsContainer');
@@ -398,7 +424,7 @@
                     score++;
                 }
             });
-            const resultMsg = `Puntaje: ${score} / 30 (${Math.round(score/30*100)}%)`;
+            const resultMsg = `Puntaje: ${score} / 30 (${Math.round(score / 30 * 100)}%)`;
             document.getElementById('resultDisplay').innerText = resultMsg;
             if (score >= 24) {
                 document.getElementById('resultDisplay').style.color = '#10b981';
@@ -410,4 +436,5 @@
         }
     </script>
 </body>
+
 </html>

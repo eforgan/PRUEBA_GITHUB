@@ -226,8 +226,8 @@
                     <div style="border: 2px solid #0062ff; padding: 10px; margin: 5px;">OACI (Anexo 18) - Normativa
                         Global</div>
                     <div style="font-size: 20px;">⬇</div>
-                    <div style="border: 2px solid #ff9f00; padding: 10px; margin: 5px;">DGAC Chile (DAR-18) - Ley
-                        Nacional</div>
+                    <div style="border: 2px solid #ff9f00; padding: 10px; margin: 5px;">ANAC Argentina (RAAC Parte 18) -
+                        Ley Nacional</div>
                     <div style="font-size: 20px;">⬇</div>
                     <div style="border: 2px solid #10b981; padding: 10px; margin: 5px;">IATA DGR - Estándar Operativo
                         Comercial</div>
@@ -271,11 +271,11 @@
 
         const quizzes = {
             1: [
-                { q: "¿Qué documento legal aplica específicamente en Chile?", a: ["DAR-18", "Anexo 17", "Manual IATA"], c: 0 },
-                { q: "¿Quién es el responsable de CLASIFICAR la mercancía?", a: ["El Piloto", "El Expedidor", "El Explotador"], c: 1 },
+                { q: "¿Qué documento legal aplica específicamente en Argentina?", a: ["RAAC Parte 18", "Anexo 17", "Manual IATA"], c: 0 },
+                { q: "¿Quién es el responsable de CLASIFICAR la mercancía según ANAC?", a: ["El Piloto", "El Expedidor", "El Explotador"], c: 1 },
                 { q: "¿Qué significa NOTOC?", a: ["Nota de Carga", "Notification to Captain", "No tocar la carga"], c: 1 },
-                { q: "¿El IATA DGR es más o menos restrictivo que OACI?", a: ["Igual", "Más restrictivo", "Menos restrictivo"], c: 1 },
-                { q: "¿Qué anexo de OACI regula DG?", a: ["Anexo 1", "Anexo 18", "Anexo 14"], c: 1 }
+                { q: "¿El IATA DGR es generalmente más restrictivo que las IT de OACI?", a: ["Igual", "Sí, incluye variaciones", "Menos restrictivo"], c: 1 },
+                { q: "¿Qué anexo de OACI sirve de base para la RAAC 18?", a: ["Anexo 1", "Anexo 18", "Anexo 14"], c: 1 }
             ],
             2: [
                 { q: "¿A qué clase pertenecen las baterías de litio?", a: ["Clase 3", "Clase 7", "Clase 9"], c: 2 },
@@ -292,11 +292,11 @@
                 { q: "¿Qué marca indica 'Cantidades Limitadas'?", a: ["Diamante con 'Y'", "Circulo rojo", "Triángulo amarillo"], c: 0 }
             ],
             4: [
-                { q: "¿Quién debe firmar obligatoriamente la DGD?", a: ["El Piloto", "El Expedidor", "El Agente de Aduana"], c: 1 },
+                { q: "¿Quién debe firmar obligatoriamente la DGD bajo normativa ANAC?", a: ["El Piloto", "El Expedidor", "El Agente de Aduana"], c: 1 },
                 { q: "¿Se permite el uso de corrector líquido en la DGD?", a: ["Sí", "No", "Solo en la cantidad"], c: 1 },
                 { q: "¿Qué documento indica la ubicación exacta de la carga en bodega?", a: ["Manifiesto", "NOTOC", "Guía Aérea"], c: 1 },
                 { q: "¿Qué tabla verifica si un ácido y una base pueden cargarse juntos?", a: ["Tabla A", "Tabla de Segregación", "NOTOC"], c: 1 },
-                { q: "¿Quién entrega el NOTOC al piloto?", a: ["El expedidor", "El explotador (empresa aérea)", "La DGAC"], c: 1 }
+                { q: "¿Quién entrega el NOTOC al piloto?", a: ["El expedidor", "El explotador (empresa aérea)", "La ANAC"], c: 1 }
             ],
             5: [
                 { q: "¿Cuál es el SoC máximo para UN 3480 en aviones de pasajeros?", a: ["50%", "100%", "30%"], c: 2 },
@@ -308,7 +308,7 @@
             6: [
                 { q: "¿Primer paso ante un derrame en cabina de helicóptero?", a: ["Limpiar con agua", "Aislar el área", "Pisar la mancha"], c: 1 },
                 { q: "¿Qué guía indica la respuesta técnica inmediata?", a: ["Manual de Vuelo", "Guía ERG (OACI)", "Checklist normal"], c: 1 },
-                { q: "¿Plazo para reportar un incidente DG a la autoridad?", a: ["24 horas", "72 horas", "7 días"], c: 1 },
+                { q: "¿Plazo para reportar un incidente DG a la ANAC?", a: ["24 horas", "72 horas", "7 días"], c: 1 },
                 { q: "¿Cómo recomienda ventilar un helicóptero ante humos tóxicos?", a: ["Encender el aire acondicionado", "Abrir ventanilla de tormenta/puerta", "Cerrar todo"], c: 1 },
                 { q: "¿Cuál es un ejemplo de MP oculta común?", a: ["Ropa", "Pinturas/Gas de camping", "Libros"], c: 1 }
             ],
@@ -340,7 +340,7 @@
                 { q: "25. ¿Escarcha en bulto?", a: ["Limpiar", "Evitar contacto", "Ignorar"], c: 1 },
                 { q: "26. ¿Etiqueta animal vivo?", a: ["Peligro", "Animal labels", "CAO"], c: 1 },
                 { q: "27. ¿Flash Point?", a: ["Despegue", "Temp. vapores inflamables", "Apagado"], c: 1 },
-                { q: "28. ¿Marca 'Y' en exceptuados?", a: ["Limitada", "N/A", "Chile"], c: 1 },
+                { q: "28. ¿Marca 'Y' en exceptuados?", a: ["Limitada", "N/A", "Argentina"], c: 1 },
                 { q: "29. ¿Caída GE II?", a: ["0.8m", "1.2m", "1.8m"], c: 1 },
                 { q: "30. ¿Firma Checklist?", a: ["Expedidor", "Aceptación aerolínea", "Piloto"], c: 1 }
             ]
