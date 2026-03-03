@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Pro: Mercancías Peligrosas en Helicópteros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0062ff;
+            --accent: #ff9f00;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --glass: rgba(255, 255, 255, 0.05);
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --success: #10b981;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(0,98,255,0.2) 0%, rgba(15,23,42,1) 100%);
+            padding: 2rem;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #60a5fa, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            color: #94a3b8;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: -100px auto 100px;
+            padding: 0 2rem;
+        }
+
+        /* Card / Glassmorphism */
+        .module-card {
+            background: var(--glass);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .module-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .module-card h2 {
+            color: var(--accent);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .module-card h2::before {
+            content: '';
+            display: inline-block;
+            width: 40px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        /* Infographic Placeholder */
+        .infographic {
+            width: 100%;
+            border-radius: 16px;
+            margin: 2rem 0;
+            border: 1px solid rgba(255,255,255,0.1);
+            overflow: hidden;
+        }
+
+        .infographic img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Helicopter Case Section */
+        .helo-case {
+            background: rgba(0, 98, 255, 0.1);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            border-radius: 0 16px 16px 0;
+            margin-top: 2rem;
+        }
+
+        .helo-case h4 {
+            color: #60a5fa;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Exam Section */
+        .exam-section {
+            background: #ffffff;
+            color: #1e293b;
+            padding: 4rem;
+            border-radius: 32px;
+            margin-top: 5rem;
+        }
+
+        .exam-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .question {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .question h4 {
+            font-size: 1.15rem;
+            margin-bottom: 1rem;
+        }
+
+        .options {
+            display: grid;
+            gap: 10px;
+        }
+
+        .option-label {
+            display: block;
+            padding: 1rem;
+            background: #f1f5f9;
+            border: 2px solid transparent;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .option-label:hover {
+            background: #e2e8f0;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        input[type="radio"]:checked + span {
+            font-weight: 600;
+        }
+
+        .btn {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 3rem;
+            border-radius: 50px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            display: block;
+            margin: 2rem auto;
+            font-size: 1.1rem;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background: #0056e0;
+        }
+
+        /* Floating Nav */
+        .nav {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 0.8rem 2rem;
+            border-radius: 40px;
+            border: 1px solid rgba(255,255,255,0.1);
+            z-index: 1000;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            opacity: 0.7;
+        }
+
+        .nav a:hover {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .container { margin-top: -50px; }
+            .exam-section { padding: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <a href="#mod1">Módulo 1</a>
+        <a href="#mod2">Módulo 2</a>
+        <a href="#mod3">Módulo 3</a>
+        <a href="#mod4">Módulo 4</a>
+        <a href="#mod5">Módulo 5</a>
+        <a href="#mod6">Módulo 6</a>
+        <a href="#examen">Examen Final</a>
+    </div>
+
+    <header class="hero">
+        <h1>Transporte de Mercancías Peligrosas</h1>
+        <p>Curso especializado en operaciones de helicópteros (HEMS, Carga Externa, AW109SP). Basado en normativas IATA 2025 y DAR-18.</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Módulo 1 -->
+        <section id="mod1" class="module-card">
+            <h2>Módulo 1: Fundamentos</h2>
+            <p>Este módulo establece el marco legal internacional y nacional. En helicópteros, la responsabilidad del piloto aumenta en zonas remotas.</p>
+            <div class="helo-case">
+                <h4>CASO HELICÓPTEROS</h4>
+                <p>En operaciones fuera de base (ej. helipads remotos), el piloto debe verificar personalmente que la carga cumpla con el DAR-18, actuando como filtro de seguridad final.</p>
+            </div>
+        </section>
+
+        <!-- Módulo 2 -->
+        <section id="mod2" class="module-card">
+            <h2>Módulo 2: Clasificación de Riesgo</h2>
+            <p>Identificamos las 9 clases de peligro. Desde gases hasta material misceláneo.</p>
+            <div class="infographic">
+                <img src="./dg_labels_infographic_1772558418662.png" alt="Esquema Clases Mercancías Peligrosas">
+            </div>
+            <div class="helo-case">
+                <h4>PROTOTIPO OPERACIONAL</h4>
+                <p>Uso de botellas de oxígeno médico en HEMS (Clase 2.2). Deben estar debidamente ancladas siguiendo el STC (Supplemental Type Certificate) de la aeronave para evitar proyectiles en caso de turbulencia.</p>
+            </div>
+        </section>
+
+        <!-- Módulo 3 -->
+        <section id="mod3" class="module-card">
+            <h2>Módulo 3: Embalaje y Marcado</h2>
+            <p>La importancia del embalaje UN certificado y la etiqueta de orientación.</p>
+            <div class="helo-case">
+                <h4>TIPS DE CABINA</h4>
+                <p>En el AW109, el acceso a la bodega es limitado. Las etiquetas de orientación deben ser visibles desde el portalón de carga para asegurar que el bulto ha sido colocado correctamente antes de cerrar.</p>
+            </div>
+        </section>
+
+        <!-- Módulo 4 -->
+        <section id="mod4" class="module-card">
+            <h2>Módulo 4: Documentación</h2>
+            <p>La Declaración (DGD) y el NOTOC. Sin papeles, no hay vuelo.</p>
+            <div class="helo-case">
+                <h4>OPERACIÓN MINERA</h4>
+                <p>Verificación de la firma del expedidor en plataformas off-shore. El NOTOC debe incluir el código de emergencia ERG para que el piloto sepa qué hacer si detecta olor a químico en la cabina.</p>
+            </div>
+        </section>
+
+        <!-- Módulo 5 -->
+        <section id="mod5" class="module-card">
+            <h2>Módulo 5: Litio y Hielo Seco</h2>
+            <p>El mayor riesgo en la aviación moderna: Baterías de Litio y el CO2 del Hielo Seco.</p>
+            <div class="helo-case">
+                <h4>MISIÓN CRÍTICA</h4>
+                <p>Sensores y cámaras del AW109SP. Cuando transporte baterías de repuesto, asegúrese de que tengan el 30% de carga (SoC) para minimizar el riesgo de fuego térmico.</p>
+            </div>
+        </section>
+
+        <!-- Módulo 6 -->
+        <section id="mod6" class="module-card">
+            <h2>Módulo 6: Emergencias</h2>
+            <p>Protocolos de acción ante derrames o fuego.</p>
+            <div class="helo-case">
+                <h4>ACCION RÁPIDA</h4>
+                <p>En cabinas pequeñas, la ventilación de emergencia es prioritaria. Abra la ventanilla de tormenta (storm window) si es posible para ventilar vapores tóxicos.</p>
+            </div>
+        </section>
+
+        <!-- Examen Final -->
+        <section id="examen" class="exam-section">
+            <div class="exam-header">
+                <h2>Examen Final de Certificación</h2>
+                <p>Responda las 30 preguntas de selección múltiple. Solo una opción es correcta.</p>
+            </div>
+            
+            <form id="quizForm">
+                <!-- Las preguntas se inyectarán vía JS o se escriben aquí -->
+                <div id="questionsContainer"></div>
+                <button type="button" class="btn" onclick="checkResults()">Verificar Resultados</button>
+            </form>
+            <div id="resultDisplay" style="text-align:center; font-size:1.5rem; margin-top:2rem; font-weight:bold; color:var(--primary);"></div>
+        </section>
+
+    </div>
+
+    <script>
+        const questions = [
+            { q: "1. ¿Cuál es el límite de presión diferencial que debe soportar un embalaje de líquidos según el DGR?", a: ["75 kPa", "95 kPa", "110 kPa"], c: 1 },
+            { q: "2. ¿Qué clase abarca las sustancias que emiten gases inflamables al contacto con el agua?", a: ["Clase 4.1", "Clase 4.3", "Clase 5.1"], c: 1 },
+            { q: "3. ¿Cuál es la marca de inspección para un tambor de acero re-acondicionado?", a: ["R o RL", "UN-R", "RE-CERT"], c: 0 },
+            { q: "4. ¿Qué código representa a una 'Jerrican' de plástico de tapa no removible?", a: ["3A1", "3H1", "6H2"], c: 1 },
+            { q: "5. ¿Qué significa el código de embalaje 'V'?", a: ["Embalaje para Vidrio", "Bulto especial probado con recipientes interiores de vidrio", "Embalaje Ventilado"], c: 1 },
+            { q: "6. ¿Cuál es el volumen máximo de CO2 que atrae el hielo seco al sublimarse?", a: ["200 veces su volumen", "700 a 800 veces su volumen", "1500 veces su volumen"], c: 1 },
+            { q: "7. ¿Cómo se define una 'Variación de Operador'?", a: ["Un error del piloto", "Una regla más estricta impuesta por una aerolínea", "Un cambio en la ruta de vuelo"], c: 1 },
+            { q: "8. ¿Qué etiqueta se debe usar si la mercancía tiene un 'Riesgo Subsidiario' de corrosión?", a: ["Etiqueta de Clase 8 completa", "Etiqueta de Clase 8 sin el número de clase abajo", "Etiqueta blanca con borde rojo"], c: 1 },
+            { q: "9. ¿Cuál es la distancia mínima de separación entre radioactivos y cabina?", a: ["Siempre 2 metros", "Depende del Índice de Transporte TI", "No hay distancia mínima"], c: 1 },
+            { q: "10. ¿Qué significa las siglas 'Overpack'?", a: ["Carga con sobrepeso", "Embalaje usado para contener uno o más bultos", "Exceso de combustible"], c: 1 },
+            { q: "11. ¿En qué sección del DGR se encuentran los objetos prohibidos bajo cualquier circunstancia?", a: ["Sección 2.1", "Sección 1.1", "Sección 10.1"], c: 0 },
+            { q: "12. ¿Qué marca es obligatoria para el transporte de material radioactivo de baja actividad?", a: ["LSA o SCO", "RADIO-LOW", "Clase 7.4"], c: 0 },
+            { q: "13. ¿Cuál es el nombre técnico de las baterías de litio que NO son recargables?", a: ["Ion Litio", "Metal Litio", "Polímero Litio"], c: 1 },
+            { q: "14. ¿Qué protocolo se sigue si hay identificación incorrecta en un tambor de Jet A-1?", a: ["Se corrige a mano", "Rechazo inmediato y reporte", "Se acepta si la firma es válida"], c: 1 },
+            { q: "15. ¿Qué indica el número en la esquina inferior de una etiqueta de riesgo?", a: ["El peso del bulto", "La clase o división de la mercancía", "El número de orden"], c: 1 },
+            { q: "16. ¿Qué clase de riesgo NO cuenta con Grupos de Embalaje?", a: ["Clase 3", "Clase 2 (Gases)", "Clase 8"], c: 1 },
+            { q: "17. ¿Extintor recomendado para baterías de litio en helicóptero AW109?", a: ["CO2 únicamente", "Agua o extintores a base de agua/halón", "Polvo Químico Seco"], c: 1 },
+            { q: "18. ¿Qué significa el término 'Cantidades Exceptuadas'?", a: ["Regalos para la tripulación", "Mercancías en cantidades pequeñas con reglas mínimas", "Carga sin impuestos"], c: 1 },
+            { q: "19. ¿Cuál es el código UN para el combustible Aviation Gasoline (AVGAS)?", a: ["UN 1863", "UN 1203", "UN 1111"], c: 1 },
+            { q: "20. ¿Qué verifica el piloto en el NOTOC respecto a la carga?", a: ["El precio de la carga", "Afectación al Centro de Gravedad (CG)", "La marca de la caja"], c: 1 },
+            { q: "21. ¿Qué riesgo presenta el transporte de sangre infectada con VIH?", a: ["Categoría B", "Categoría A (UN 2814)", "No es peligroso"], c: 1 },
+            { q: "22. ¿Qué marca lleva una caja con baterías de litio embaladas CON un equipo?", a: ["UN 3480", "UN 3481", "UN 3090"], c: 1 },
+            { q: "23. ¿Qué indica la letra 'W' después del código de embalaje (ej. 4GW)?", a: ["Weather-proof", "Especificaciones diferentes pero equivalentes", "Warning (Peligro)"], c: 1 },
+            { q: "24. ¿Qué es un 'Passenger Aircraft' según IATA?", a: ["Solo vuelos comerciales", "Aeronave que lleva personas que no sean tripulación", "Aeronave privada"], c: 1 },
+            { q: "25. ¿Qué acción tomar si un bulto presenta signos de escarcha externa?", a: ["Limpiarlo con agua", "Evitar contacto (posible fuga criogénica)", "Ignorarlo si no huele"], c: 1 },
+            { q: "26. ¿Qué etiqueta de manipulación es obligatoria para animales vivos?", a: ["Etiqueta de Peligro", "Animals labels", "Etiqueta CAO"], c: 1 },
+            { q: "27. ¿Cómo se define el 'Punto de Inflamación' (Flash Point)?", a: ["Cuando el avión despega", "Temperatura mínima a la que desprende vapores flamables", "Cuando se apaga el motor"], c: 1 },
+            { q: "28. ¿Qué significa la marca 'Y' en un embalaje exceptuado de baterías de litio?", a: ["Cantidad Limitada", "No aplica", "Fabricado en Chile"], c: 1 },
+            { q: "29. ¿Qué altura de caída debe resistir un embalaje de Grupo II?", a: ["0.8 metros", "1.2 metros", "1.8 metros"], c: 1 },
+            { q: "30. ¿Quién debe firmar obligatoriamente la lista de verificación (Checklist)?", a: ["El expedidor", "Personal de la aerolínea (Aceptación)", "El piloto"], c: 1 }
+        ];
+
+        const container = document.getElementById('questionsContainer');
+        questions.forEach((item, index) => {
+            const qDiv = document.createElement('div');
+            qDiv.className = 'question';
+            qDiv.innerHTML = `<h4>${item.q}</h4>
+                <div class="options">
+                    ${item.a.map((opt, i) => `
+                        <label class="option-label">
+                            <input type="radio" name="q${index}" value="${i}"> <span>${opt}</span>
+                        </label>
+                    `).join('')}
+                </div>`;
+            container.appendChild(qDiv);
+        });
+
+        function checkResults() {
+            let score = 0;
+            questions.forEach((item, index) => {
+                const selected = document.querySelector(`input[name="q${index}"]:checked`);
+                if (selected && parseInt(selected.value) === item.c) {
+                    score++;
+                }
+            });
+            const resultMsg = `Puntaje: ${score} / 30 (${Math.round(score/30*100)}%)`;
+            document.getElementById('resultDisplay').innerText = resultMsg;
+            if (score >= 24) {
+                document.getElementById('resultDisplay').style.color = '#10b981';
+                document.getElementById('resultDisplay').innerText += " - ¡APROBADO!";
+            } else {
+                document.getElementById('resultDisplay').style.color = '#ef4444';
+                document.getElementById('resultDisplay').innerText += " - REPROBADO (Mínimo 80%)";
+            }
+        }
+    </script>
+</body>
+</html>

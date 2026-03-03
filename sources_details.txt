@@ -1,0 +1,200 @@
+[
+  {
+    "id": "a9eadafe-f78f-4e86-b2b1-c01e7d0e2c34",
+    "title": "2025 Updates - IATA Dangerous Goods Publications",
+    "type": "web_page",
+    "url": "https://www.iata.org/en/publications/newsletters/iata-knowledge-hub/dangerous-goods-manuals-updates/"
+  },
+  {
+    "id": "2aad5976-020a-4753-ae1b-c0321f7515d6",
+    "title": "An\u00e1lisis integral del marco normativo y operativo para el transporte a\u00e9reo de mercanc\u00edas peligrosas: Sinergia entre el MIP de MODENA CEAC, las regulaciones de la ANAC y los est\u00e1ndares internacionales (OACI/IATA)",
+    "type": "generated_text",
+    "url": null
+  },
+  {
+    "id": "25473987-f204-4edb-b7f7-945c592cbf4f",
+    "title": "Centro de Instrucci\u00f3n de Aeron\u00e1utica Civil - UNTREF",
+    "type": "pdf",
+    "url": "http://untref.edu.ar/uploads/cuadernillo_A5_CIAC_NUEVO_2%20%281%29.pdf"
+  },
+  {
+    "id": "ed30c9f7-74cb-4e4e-bcc1-7f75c0ffe96c",
+    "title": "Centros de Instrucci\u00f3n y Entrenamiento (CIAC/CEAC) | Argentina ...",
+    "type": "web_page",
+    "url": "https://www.argentina.gob.ar/anac/personal-aeronautico/centros-de-instruccion-y-entrenamiento-ciacceac"
+  },
+  {
+    "id": "c3e19dbb-b0c9-4a5e-89e5-4825a53ed6c0",
+    "title": "DAP 06 15 - DGAC",
+    "type": "pdf",
+    "url": "https://www.dgac.gob.cl/transparencia/otros/dap0615.pdf"
+  },
+  {
+    "id": "6fb8c7bb-6a3b-4e7d-ac2e-1109aacc41f4",
+    "title": "Dangerous Goods Regulations - SIGNIFICANT CHANGES ... - IATA",
+    "type": "pdf",
+    "url": "https://www.iata.org/contentassets/b08040a138dc4442a4f066e6fb99fe2a/dgr-66-en-significant-changes.pdf"
+  },
+  {
+    "id": "83e8c56f-3aa5-4ea3-8aa6-4e65e6cc862d",
+    "title": "Dangerous Goods/Technical Instructions - ICAO",
+    "type": "web_page",
+    "url": "https://www.icao.int/Dangerous-Goods/Technical-Instructions"
+  },
+  {
+    "id": "9f1cc2b9-de42-477c-90bc-c6932519f2c7",
+    "title": "Doc 9284 OACI: El Pilar T\u00e9cnico para el Transporte sin Riesgos de Mercanc\u00edas Peligrosas por V\u00eda A\u00e9rea - AvSec Venezuela",
+    "type": "web_page",
+    "url": "https://avsecvenezuela.blogspot.com/2025/10/doc-9284-oaci-el-pilar-tecnico-para-el.html"
+  },
+  {
+    "id": "c9605978-75e9-4bae-866b-949ca08ccf06",
+    "title": "En el Manual de Mercanc\u00edas Peligrosas del Operador se deben detallar los procedimientos apropiados para manejar las mercanc\u00edas - Opain",
+    "type": "pdf",
+    "url": "https://www.opain.co/archivos/guia_elaboracion_manual_mercancias_peligrosas_operador.pdf"
+  },
+  {
+    "id": "4e3849d1-4226-42c6-ad10-5c16c97a5fc8",
+    "title": "IATA 66th Edition Addendum Now Available - ICC Compliance Center",
+    "type": "web_page",
+    "url": "https://www.thecompliancecenter.com/help-center/articles/iata-66th-edition-addendum-now-available/"
+  },
+  {
+    "id": "c063fce9-78a2-4915-9e25-4f944c233f04",
+    "title": "ICAO Technical Instructions, 2025-2026 Edition - ICC Compliance Center",
+    "type": "web_page",
+    "url": "https://www.thecompliancecenter.com/product/bk-icao25/"
+  },
+  {
+    "id": "c2714c81-198b-433e-bd9d-628fc94f5e1f",
+    "title": "MANUAL DE INSTRUCCION Y PROCEDIMIENTOS (MIP) 1 ...",
+    "type": "pdf",
+    "url": "https://www.anac.gov.ar/anac/web/uploads/pers_aeron/mip-y-sms-instrucci-n-particular-final.pdf"
+  },
+  {
+    "id": "3c6ff458-2e61-419d-ab83-52192119311a",
+    "title": "MIP MODENA CEAC (1).pdf",
+    "type": "word_doc",
+    "url": null
+  },
+  {
+    "id": "2f0e8e49-fcbb-426d-9888-7b74100c83e4",
+    "title": "Manual de riesgos en el transporte de mercanc\u00edas y residuos peligrosos - CATAMP",
+    "type": "pdf",
+    "url": "https://www.catamp.org.ar/wp-content/uploads/2018/12/manual-de-riesgos-en-el-transporte-de-mercancias-y.pdf"
+  },
+  {
+    "id": "14f92f8a-8d69-473a-bd63-f6e0a9c639d7",
+    "title": "Normativa - Argentina.gob.ar",
+    "type": "web_page",
+    "url": "https://www.argentina.gob.ar/anac/infraestructura-y-servicios-aeroportuarios/mercancias-peligrosas/normativa"
+  },
+  {
+    "id": "f46e4e10-31c5-4831-b1a3-57aa7665b5cb",
+    "title": "Nuevas RAAC vigentes | Argentina.gob.ar",
+    "type": "web_page",
+    "url": "https://www.argentina.gob.ar/anac/nuevas-raac-vigentes"
+  },
+  {
+    "id": "510ba770-ec06-422a-b561-b0b5bcf2b096",
+    "title": "RAAC PARTE 18 TRANSPORTE SIN RIESGOS DE MERCANC\u00cdAS PELIGROSAS POR V\u00cdA A\u00c9REA - Administraci\u00f3n Nacional de Aviaci\u00f3n Civil",
+    "type": "pdf",
+    "url": "http://www.anac.gov.ar/anac/web/uploads/normativa/raac/raac_vigentes/enmiendas/parte-18-con-amdt02-09-02.pdf"
+  },
+  {
+    "id": "482c2685-f19e-4b71-9850-c85af3b869d2",
+    "title": "RAAC | Argentina.gob.ar",
+    "type": "web_page",
+    "url": "https://www.argentina.gob.ar/anac/raac-dnar-regulaciones-argentinas-de-aviacion-civil/raac"
+  },
+  {
+    "id": "c5549840-1994-453c-b7c0-bae4568eb779",
+    "title": "RAAC | Argentina.gob.ar",
+    "type": "web_page",
+    "url": "https://www.argentina.gob.ar/anac/resoluciones-disposiciones-y-otras-normas-aeronauticas/raac"
+  },
+  {
+    "id": "2af58d4a-a576-478d-8e9d-77df66a174e0",
+    "title": "RAC \u2013 18 Regulaci\u00f3n Para El Transporte Sin Riesgos De Mercanc\u00edas Peligrosas - Autoridad de Aviaci\u00f3n Civil",
+    "type": "pdf",
+    "url": "https://www.aac.gob.sv/wp-content/uploads/download-manager-files/RAC%2018%20Ed.%2003%20Rev.%2001.pdf"
+  },
+  {
+    "id": "312dc876-412b-4b64-8458-bec4092fb9fb",
+    "title": "REGULACI\u00d3N DE AERON\u00c1UTICA CIVIL RAC \u2013 18 - AHAC",
+    "type": "pdf",
+    "url": "https://www.ahac.gob.hn/Documentos/BIBLIOTECA%20T%C3%89CNICA/REGULACI%C3%93N/RAC%2018%20-%20TRANSPORTE%20SIN%20RIESGO%20DE%20MERCANCIAS%20PELIGROSAS%20POR%20VIA%20A%C3%89REA%204TA%20EDICI%C3%93N.pdf"
+  },
+  {
+    "id": "e9959fcf-1336-4108-a0c9-b00408625296",
+    "title": "RESUMEN - RESOLUCI\u00d3N 83 / 2022 - ADMINISTRACION NACIONAL DE AVIACION CIVIL",
+    "type": "web_page",
+    "url": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-83-2022-361495"
+  },
+  {
+    "id": "4fa940e5-1c6a-40d8-9164-40fac384eb8a",
+    "title": "Significant Changes to the 2025 66th IATA DGR Book | Hazmat School",
+    "type": "web_page",
+    "url": "https://www.hazmatschool.com/blog/66th-iata-dgr-changes/"
+  },
+  {
+    "id": "8cd691c9-41ca-4910-ad05-ecb7d3d8813c",
+    "title": "TECHNICAL INSTRUCTIONS FOR THE SAFE TRANSPORT ... - ICAO",
+    "type": "pdf",
+    "url": "https://www.icao.int/sites/default/files/DangerousGoods/RevisionsIncorporatedIn2025_2026EditionOfTechnicalInstructionsForTheSafeTransportOfDangerousGoodsByAir.pdf"
+  },
+  {
+    "id": "73299373-35e3-47f3-aff4-e8844f442442",
+    "title": "TRANSPORTE DE MERCANC\u00cdAS PELIGROSAS - UNECE",
+    "type": "web_page",
+    "url": "https://unece.org/DAM/trans/danger/publi/unrec/rev16/Spanish/Volumen1.pdf"
+  },
+  {
+    "id": "e740d3f8-0032-4759-ab95-310aaff4446c",
+    "title": "TRANSPORTE DE MERCANC\u00cdAS PELIGROSAS - UNECE",
+    "type": "web_page",
+    "url": "https://unece.org/DAM/trans/danger/publi/unrec/rev19/Rev19s_Vol_II.pdf"
+  },
+  {
+    "id": "560c0c3c-911e-4f6d-b72d-95286f0fdba3",
+    "title": "Transporte sin riesgos de mercanc\u00edas peligrosas por v\u00eda a\u00e9rea - Administraci\u00f3n Nacional de Aviaci\u00f3n Civil",
+    "type": "pdf",
+    "url": "https://www.anac.gov.ar/anac/web/uploads/normativa/anexos-oaci/anexo-18.pdf"
+  },
+  {
+    "id": "ce638cdf-35fe-43ad-9873-271d6d83b37c",
+    "title": "What's New in the 2025 IATA DGR? - Lion Technology",
+    "type": "web_page",
+    "url": "https://www.lion.com/lion-news/september-2024/iata-dgr-changes-for-2025"
+  },
+  {
+    "id": "eb967488-4efb-4262-8148-af5d5f5f04e8",
+    "title": "anac aviaci\u00f3n civil - Jus.gob.ar",
+    "type": "pdf",
+    "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/273416/res226.pdf"
+  },
+  {
+    "id": "047d90ef-7793-4f7a-b3e5-15413e2593e6",
+    "title": "anexo - REGULACIONES ARGENTINAS DE AVIACI\u00d3N CIVIL (RAAC)",
+    "type": "pdf",
+    "url": "http://www.anac.gov.ar/anac/web/uploads/normativa/raac/proyectos/raac-175-debo.pdf"
+  },
+  {
+    "id": "0a931fd1-a183-4520-ba20-463839ca79b2",
+    "title": "https://www.srvsop.aero/site/wp-content/uploads/2021/12/0-Informe-RPEL17-Completo.pdf",
+    "type": "web_page",
+    "url": null
+  },
+  {
+    "id": "62d3c619-5ae2-42c5-b421-36e689893227",
+    "title": "parte-175.pdf - Administraci\u00f3n Nacional de Aviaci\u00f3n Civil",
+    "type": "pdf",
+    "url": "http://anac.gov.ar/anac/web/uploads/normativa/raac/raac_vigentes/por_parte/parte-175.pdf"
+  },
+  {
+    "id": "d7c07409-4e26-4b56-acfb-8a30e4c89094",
+    "title": "reglamento sobre el transporte sin riesgos de mercanc\u00edas peligrosas por v\u00eda a\u00e9rea DAR -18 - DGAC",
+    "type": "pdf",
+    "url": "https://www.dgac.gob.cl/wp-content/uploads/2019/08/DAR_18.pdf"
+  }
+]
