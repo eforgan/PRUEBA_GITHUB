@@ -1,13 +1,16 @@
-# Curso: Transporte Aéreo de Mercancías Peligrosas (IATA 2025 / DAR-18)
+# Curso Online: Transporte Aéreo de Mercancías Peligrosas con Foco en Operaciones de Helicópteros
+
+Este curso integra las normativas de la **IATA 2025** y el **DAR-18** de la DGAC Chile, con ejemplos prácticos aplicados a la operación de alas rotativas (Helicópteros).
+
+---
 
 ## Módulo 1: Fundamentos y Marco Regulatorio
-**Conceptos Clave:**
-- **Definición:** Artículos o sustancias capaces de poner en riesgo la salud, seguridad, propiedad o el medio ambiente.
-- **Marco Legal:** Anexo 18 OACI y DAR-18 (Chile).
-- **Manual IATA DGR:** El estándar de la industria.
-- **Responsabilidades:** 
-  - Expedidor: Clasificar, embalar, marcar y documentar.
-  - Explotador: Aceptar, almacenar, cargar y notificar (NOTOC).
+**Descripción:** Introducción a la filosofía de seguridad y la estructura legal que rige el transporte de carga peligrosa.
+
+*   **Sección 1.1: Marco Legal (OACI/DAR-18):**
+    *   *Ejemplo Helicópteros:* En operaciones fuera de base (ej. helipads remotos en cordillera), el piloto o el personal de tierra debe asegurar que la carga cumpla con el DAR-18, ya que no siempre se cuenta con un agente de carga certificado en el sitio de despegue.
+*   **Sección 1.2: Responsabilidades del Explotador y Expedidor:**
+    *   *Ejemplo Helicópteros:* En servicios de carga externa (Sling Load), el expedidor debe certificar que los tambores de combustible o sustancias químicas están correctamente preparados según el manual, mientras que el piloto debe verificar la estabilidad y seguridad de dicha carga antes de iniciar el vuelo.
 
 ### Test Módulo 1
 1. ¿Cuál es el documento legal que regula el transporte de mercancías peligrosas específicamente en Chile?
@@ -19,21 +22,15 @@
 ---
 
 ## Módulo 2: Clasificación de Mercancías Peligrosas
-**Detalle de Clases:**
-1. **Explosivos:** Divisiones 1.1 a 1.6.
-2. **Gases:** Inflamables, no inflamables y tóxicos.
-3. **Líquidos Inflamables:** Punto de inflamación.
-4. **Sólidos Inflamables:** Combustión espontánea.
-5. **Sustancias Comburentes y Peróxidos Orgánicos.**
-6. **Sustancias Tóxicas e Infecciosas.**
-7. **Material Radioactivo.**
-8. **Sustancias Corrosivas.**
-9. **Mercancías Peligrosas Diversas:** Incluye Baterías de Litio y Hielo Seco.
+**Descripción:** Identificación de las 9 clases de riesgo y su relevancia en el entorno del helicóptero.
 
-**Grupos de Embalaje (GE):**
-- **GE I:** Gran Peligro.
-- **GE II:** Peligro Medio.
-- **GE III:** Peligro Menor.
+*   **Sección 2.1: Clase 1 y 2 (Explosivos y Gases):**
+    *   *Ejemplo Helicópteros:* Transporte de oxígeno médico en operaciones **HEMS** (Helicóptero de Emergencia Médica). Las botellas deben estar aseguradas para evitar daños por vibración.
+    *   *Ejemplo Helicópteros:* Uso de explosivos para control de avalanchas (lanza-bombas desde la cabina), donde se aplican excepciones y protocolos estrictos de seguridad operacional.
+*   **Sección 2.2: Clase 3 (Líquidos Inflamables):**
+    *   *Ejemplo Helicópteros:* Transporte de combustible JET A-1 en tambores para reabastecimiento en zonas aisladas. Se debe clasificar correctamente el número UN 1863.
+*   **Sección 2.3: Clase 8 y 9 (Corrosivos y Misceláneos):**
+    *   *Ejemplo Helicópteros:* Baterías de ácido de la propia aeronave si se transportan como repuesto, o las baterías de litio de las **EFB** (Electronic Flight Bags) utilizadas por los pilotos en el cockpit.
 
 ### Test Módulo 2
 1. ¿A qué clase de riesgo pertenecen las baterías de litio?
@@ -45,20 +42,14 @@
 ---
 
 ## Módulo 3: Embalaje, Marcado y Etiquetado
-**Desarrollo Detallado:**
-*   **Tipos de Embalajes:** 
-    *   *Embalajes de Especificación UN:* Probados y certificados para resistir caídas, presión y apilamiento.
-    *   *Embalajes Interiores, Exteriores y Combinados:* El uso correcto evita derrames.
-*   **Instrucciones de Embalaje (PI):** Cada número UN tiene asociada una instrucción (ej. PI 965 para baterías). Estas definen la cantidad máxima permitida por bulto.
-*   **Marcas de Especificación UN:** Ejemplo: `4G/Y145/S/24/E/CH/3-28/DGAC`.
-    *   `4G`: Caja de cartón.
-    *   `Y`: Certificada para Grupos de Embalaje II y III.
-    *   `145`: Peso máximo.
-    *   `CH`: País de fabricación (Chile).
-*   **Etiquetado:** 
-    *   *Etiquetas de Riesgo:* Forma de rombo, color específico representativo del riesgo.
-    *   *Etiquetas de Manipulación:* "Orientación de bulto", "Solo Avión de Carga" (CAO), etc.
-*   **Cantidades Limitadas (Y):** Embalajes que no requieren especificación UN completa si cumplen con límites de peso muy estrictos y llevan la marca 'Y'.
+**Descripción:** Cómo asegurar físicamente la mercancía y comunicarla visualmente en la aeronave.
+
+*   **Sección 3.1: Especificaciones de Embalaje UN:**
+    *   *Ejemplo Helicópteros:* Uso de cajas de cartón (4G) certificadas para transportar repuestos críticos de motor o caja de transmisión que contienen aceites o sustancias peligrosas ocultas.
+*   **Sección 3.2: Etiquetado de Manipulación:**
+    *   *Ejemplo Helicópteros:* La etiqueta de "Orientación de Bulto" es vital en helicópteros de cabina pequeña, donde el espacio es reducido y el bulto debe mantenerse vertical para evitar derrames que comprometan la electrónica de la cabina.
+*   **Sección 3.3: Marcas y Cantidades Limitadas:**
+    *   *Ejemplo Helicópteros:* Transporte de pequeñas cantidades de productos químicos para mantenimiento de torres de alta tensión mediante helicóptero.
 
 ### Test Módulo 3
 1. ¿Qué significa la letra "X" en un código de especificación UN en cuanto al Grupo de Embalaje?
@@ -70,16 +61,14 @@
 ---
 
 ## Módulo 4: Documentación y Procesos de Aceptación
-**Desarrollo Detallado:**
-*   **Declaración del Expedidor (DGD - Shipper's Declaration):** Documento crítico que debe estar libre de tachaduras. Debe incluir:
-    *   Nombre y dirección del Expedidor/Consignatario.
-    *   Descripción completa de la mercancía (UN, nombre, clase, GE, cantidad).
-    *   Firma del expedidor garantizando que la carga cumple con el DGR.
-*   **Guía Aérea (AWB):** Debe contener la frase "Dangerous Goods as per attached Shipper's Declaration" o similar.
-*   **Lista de Verificación (Checklist):** El Explotador DEBE usar una lista física para verificar bulto por bulto antes de aceptar la carga.
-*   **Almacenamiento y Segregación:** 
-    *   No se pueden cargar juntas mercancías que reaccionen entre sí (ej. Ácidos con Bases o Comburentes con Inflamables). Se utiliza la "Tabla de Segregación".
-*   **NOTOC (Notification to Captain):** Documento que se entrega al piloto antes del cierre de puertas. Indica la ubicación exacta de la mercancía peligrosa en la bodega y el plan de emergencia.
+**Descripción:** Protocolos de verificación y trámites legales previos al vuelo.
+
+*   **Sección 4.1: Declaración del Expedidor (DGD):**
+    *   *Ejemplo Helicópteros:* Validación de la firma del expedidor en el sitio de operación (ej. una mina o plataforma off-shore) antes de cargar la mercancía en el helicóptero.
+*   **Sección 4.2: Almacenamiento y Segregación:**
+    *   *Ejemplo Helicópteros:* En helicópteros como el **AW109**, donde el espacio es compartido o el acceso a la bodega es limitado, la segregación de sustancias incompatibles es aún más crítica para evitar reacciones químicas en un espacio confinado.
+*   **Sección 4.3: El NOTOC Especializado:**
+    *   *Ejemplo Helicópteros:* El piloto al recibir el NOTOC debe considerar si la mercancía peligrosa afecta su plan de vuelo en caso de tener que realizar un aterrizaje de emergencia en un helisitio no preparado.
 
 ### Test Módulo 4
 1. ¿Qué documento debe estar presente para que una mercancía peligrosa sea aceptada por la aerolínea?
@@ -91,15 +80,12 @@
 ---
 
 ## Módulo 5: Mercancías Especiales - Baterías de Litio y Hielo Seco
-**Desarrollo Detallado:**
-*   **Baterías de Litio (Clase 9):**
-    *   *Tipos:* Ion Litio (recargables) y Metal Litio (no recargables).
-    *   *Riesgo Principal:* Cortocircuito y "fuga térmica" (thermal runaway), un incendio que genera su propio oxígeno y es extremadamente difícil de extinguir.
-    *   *Estado de Carga (SoC):* Para aviones de pasajeros, las baterías de Ion Litio (UN 3480) deben transportarse con un SoC máximo del 30%.
-    *   *Excepciones de la Sección II:* Baterías pequeñas (ej. en teléfonos o laptops) tienen reglas de embalaje simplificadas pero requieren la "Marca de Batería de Litio".
-*   **Hielo Seco (UN 1845):**
-    *   *Riesgo:* Sublimación (pasa de sólido a gas CO2). En espacios cerrados, desplaza el oxígeno y puede causar asfixia. Además, el gas genera presión; el embalaje nunca debe ser hermético para permitir la ventilación.
-    *   *Cantidad:* Debe declararse en el NOTOC para que el piloto monitoree la tasa de ventilación en la cabina.
+**Descripción:** Gestión de los artículos más comunes y peligrosos en la aviación moderna.
+
+*   **Sección 5.1: Baterías de Litio en Operaciones de Helicópteros:**
+    *   *Ejemplo Helicópteros:* Sensores y equipos de grabación de imágenes (como los usados en el AW109SP) que utilizan baterías de litio de alta capacidad. Su transporte y estado de carga (SoC 30%) debe ser monitoreado.
+*   **Sección 5.2: Hielo Seco en HEMS y Transporte de Muestras:**
+    *   *Ejemplo Helicópteros:* Transporte de órganos o muestras biológicas en vuelos de emergencia médica utilizando Hielo Seco. El piloto debe ser consciente de la cantidad de CO2 generado para asegurar una ventilación adecuada en la cabina.
 
 ### Test Módulo 5
 1. ¿Cuál es el riesgo principal del Hielo Seco (UN 1845) dentro de la bodega de un avión?
@@ -111,15 +97,12 @@
 ---
 
 ## Módulo 6: Procedimientos de Emergencia y Reportes
-**Desarrollo Detallado:**
-*   **Respuesta Inicial:** El personal de rampa o tripulación debe identificar la etiqueta de riesgo para saber con qué sustancia están tratando.
-*   **Documento ERG (OACI):** Es la "Guía de Respuesta de Emergencia" que indica qué hacer ante un derrame o incendio específico.
-*   **Procedimiento General:**
-    1.  Aislar el área.
-    2.  Notificar al comandante y a los servicios de emergencia.
-    3.  Evacuar si es necesario.
-*   **Reportes Obligatorios:** Cualquier incidente o accidente con mercancías peligrosas debe reportarse a la autoridad aeronáutica (DGAC en Chile) en un plazo máximo de 72 horas.
-*   **Artículos Ocultos:** Educación constante para detectar pasajeros que intentan llevar sustancias prohibidas (ej. balones de gas de camping o pinturas inflamables) sin declarar.
+**Descripción:** Cómo actuar cuando los protocolos fallan y cómo reportar para mejorar la seguridad.
+
+*   **Sección 6.1: Respuesta en Cabina y Guía ERG:**
+    *   *Ejemplo Helicópteros:* En caso de humo por batería de litio en un helicóptero ligero, el procedimiento de uso de extintores y ventilación es mucho más rápido debido al bajo volumen de aire de la cabina.
+*   **Sección 6.2: Reportes de Incidentes ante la DGAC:**
+    *   *Ejemplo Helicópteros:* Si un tambor de combustible transportado externamente presenta una fuga tras el aterrizaje, se debe realizar el reporte de incidente de mercancías peligrosas en el plazo legal de 72 horas.
 
 ### Test Módulo 6
 1. ¿Cuál es el primer paso ante un derrame detectado en la bodega de carga?
@@ -127,4 +110,3 @@
 3. ¿En qué plazo máximo se debe reportar un incidente de mercancías peligrosas a la autoridad aeronáutica?
 4. ¿Qué debe hacer un tripulante si encuentra una batería de litio echando humo en la cabina de pasajeros?
 5. Menciona un ejemplo común de "Mercancía Peligrosa Oculta" en el equipaje de un pasajero.
-
